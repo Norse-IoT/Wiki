@@ -22,6 +22,5 @@ jobs:
           restore-keys: |
             mkdocs-material-
       - run: pip install mkdocs-material 
-      - run: echo "wiki.norseiot.club" > CNAME
-      - run: mv CNAME site
+      - run: echo "wiki.norseiot.club" > site/CNAME
       - run: mkdocs gh-deploy --force
