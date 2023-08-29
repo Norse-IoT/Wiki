@@ -23,3 +23,7 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs gh-deploy --force
+      - uses: "finnp/create-file-action@master"
+          env:
+            FILE_NAME: "CNAME"
+            FILE_DATA: "wiki.norseiot.club"
