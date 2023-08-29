@@ -1,0 +1,5 @@
+site_name: Norse IoT Wiki
+theme:
+  name: material
+extra_css:
+  - stylesheets/iot.css
