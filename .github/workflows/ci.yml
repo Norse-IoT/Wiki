@@ -10,10 +10,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: "finnp/create-file-action@master"
-            env:
-              FILE_NAME: "CNAME"
-              FILE_DATA: "wiki.norseiot.club"
+      - run: echo "wiki.norseiot.club" > CNAME
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
         with:
