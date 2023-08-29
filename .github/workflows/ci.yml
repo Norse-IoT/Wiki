@@ -23,4 +23,6 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: echo "wiki.norseiot.club" > CNAME
+      - run: ls -l
       - run: mkdocs gh-deploy --force
+      - run: ls -l
