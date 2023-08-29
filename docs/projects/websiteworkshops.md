@@ -62,7 +62,7 @@ NKU offers free static website hosting for students and faculty. These instructi
 - It will open Finder. In the left menu under Locations will be studenthome.nku.edu.
 ![](https://norseiot.club/Website-Workshops/Instructions/images/image2.png)
 
-### Linux ![](Debian/PopOS/Ubuntu)
+### Linux (Debian/PopOS/Ubuntu)
 
 - Be sure you’re connected to NORSE-NET before connecting to the drive.
 - Open Files, and choose Other Locations
@@ -105,7 +105,7 @@ If you don’t like any of the templates, you can use Google Docs or Microsoft W
 
 To edit the file, we recommend using Visual Studio Code. It is available for all platforms, including ChromeOS through a web app. You can use Notepad, but the interface will be less user friendly.
 
-#### Open the file in Visual Studio Code ![](or Notepad)
+#### Open the file in Visual Studio Code (or Notepad)
 https://norseiot.club/Website-Workshops/Instructions/images/image4.png
 The first half of the template contains the design - or CSS code. The second half contains the content and structure of the document - or HTML code. Scroll down past the CSS to the <main> tag. ![](You can use CTRL-F)
 
