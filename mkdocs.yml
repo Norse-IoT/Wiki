@@ -3,3 +3,5 @@ theme:
   name: material
 extra_css:
   - stylesheets/iot.css
+extra_javascript:
+  - docs/javascript/removeWatermkar.js
