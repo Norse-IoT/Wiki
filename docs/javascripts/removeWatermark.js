@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     updateCredits();
 });
 
+
 function updateCredits(){
-    document.querySelector('.md-copyright').innerHTML = "Copyright Norse IoT Club";
+    document.querySelector('.md-copyright').innerHTML = `© ${new Date().getFullYear()} Norse IoT Club`;
 }

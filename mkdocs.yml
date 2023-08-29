@@ -4,4 +4,4 @@ theme:
 extra_css:
   - stylesheets/iot.css
 extra_javascript:
-  - docs/javascript/removeWatermark.js
+  - javascripts/removeWatermark.js
