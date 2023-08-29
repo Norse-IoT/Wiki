@@ -3,5 +3,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function updateCredits(){
-    ocument.querySelector('.md-copyright').innerHTML = "Copyright Norse IoT Club";
+    document.querySelector('.md-copyright').innerHTML = "Copyright Norse IoT Club";
 }
