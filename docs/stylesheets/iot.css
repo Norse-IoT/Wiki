@@ -6,14 +6,14 @@
 }
 
 .digital-pin {
-    color: green;
+    color: #00ff00;
 }
 .orange-pin {
-    color: orange;
+    color: #ffa600;
 }
 .power5-pin, .power3-pin {
     color: red;
 }
-.ground-pin {
+.ground-pin, .digital-pin, .power5-pin, .power3-pin {
     font-weight: bold;
 }

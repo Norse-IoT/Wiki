@@ -1,6 +1,10 @@
 site_name: Norse IoT Club - Wiki
 theme:
   name: material
+  palette:
+    scheme: slate
+  icon: assets/favicon.png
+  favicon: assets/favicon.png
   features:
     - navigation.tabs
     - navigation.tabs.sticky
