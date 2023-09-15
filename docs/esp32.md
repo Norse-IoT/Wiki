@@ -124,8 +124,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td><abbr title="Provides 3.3 volts of power to anything connected.">3.3V</abbr></td>
-                    <td class="digital-pin"><abbr title="General Input Output Pin. Suitable for most uses.">GIOP</abbr> 27</td>
+                    <td>
+                        <abbr title="A pin you can touch to turn into electrical signal.">TOUCH</abbr> 7 - <abbr
+                            title="Analog to Digital Converter">ADC</abbr> 17 - <abbr
+                            title="This pin features pulse width modulation, suitable for use with a servo.">PWM</abbr>
+                    </td>                    <td class="digital-pin"><abbr title="General Input Output Pin. Suitable for most uses.">GIOP</abbr> 27</td>
                     <td>11</td>
                     <td></td>
                     <td class="digital-pin"><abbr title="General Input Output Pin. Suitable for most uses.">GIOP</abbr> 17</td>
@@ -145,9 +148,10 @@
                     <td>RX2</td>
                 </tr>
                 <tr>
-                    <td><abbr title="A pin you can touch to turn into electrical signal.">TOUCH</abbr> 5 - <abbr
-                            title="Analog to Digital Converter">ADC</abbr> 15 - <abbr
-                            title="This pin features pulse width modulation, suitable for use with a servo.">PWM</abbr>
+                    <td>
+                        <abbr title="A pin you can touch to turn into electrical signal.">TOUCH</abbr> 5 - 
+                        <abbr title="Analog to Digital Converter">ADC</abbr> 15 - 
+                        <abbr title="This pin features pulse width modulation, suitable for use with a servo.">PWM</abbr>
                     </td>
                     <td class="digital-pin"><abbr title="General Input Output Pin. Suitable for most uses.">GIOP</abbr> 12</td>
                     <td>13</td>
