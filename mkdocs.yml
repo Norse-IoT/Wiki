@@ -1,7 +1,14 @@
-site_name: Norse IoT Wiki
+site_name: Norse IoT Club - Wiki
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.integrate
 extra_css:
   - stylesheets/iot.css
 extra_javascript:
   - javascripts/removeWatermark.js
+markdown_extensions:
+  - abbr

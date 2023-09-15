@@ -1,6 +1,19 @@
-.md-header {
+.md-header, .md-tabs {
     background-color: #212529;
 }
 .md-logo svg {
     content: "test";
+}
+
+.digital-pin {
+    color: green;
+}
+.orange-pin {
+    color: orange;
+}
+.power5-pin, .power3-pin {
+    color: red;
+}
+.ground-pin {
+    font-weight: bold;
 }
