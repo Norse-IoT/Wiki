@@ -107,11 +107,11 @@ To edit the file, we recommend using Visual Studio Code. It is available for all
 
 #### Open the file in Visual Studio Code (or Notepad)
 https://norseiot.club/Website-Workshops/Instructions/images/image4.png
-The first half of the template contains the design - or CSS code. The second half contains the content and structure of the document - or HTML code. Scroll down past the CSS to the <main> tag. ![](You can use CTRL-F)
+The first half of the template contains the design - or CSS code. The second half contains the content and structure of the document - or HTML code. Scroll down past the CSS to the `<main>` tag. (You can use CTRL-F)
 
 From here, you can change the document to reflect your own name, work experience, and education.
 
-If you want to add additional work experiences, or education, just copy everything from First Job Begin to First Job End, and paste it immediately following First Job End, before the </section> tag.
+If you want to add additional work experiences, or education, just copy everything from First Job Begin to First Job End, and paste it immediately following First Job End, before the `</section>` tag.
 ![](https://norseiot.club/Website-Workshops/Instructions/images/image7.png)
 You can preview your changes by opening your index.html file in your browser. Once both are open, you can save the file in Visual Studio Code ![](or Notepad), and then refresh your browser to see the changes.
 
