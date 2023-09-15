@@ -130,19 +130,18 @@ Copy the index.html file that you edited from your Downloads folder to the WWW f
 
 If you are unable to connect to your network drive, or want to ensure you can keep your site even after you graduate, you can use GitHub Pages in order to host your site on their servers.
 
-    First, sign up on GitHub.
-    Then, create a new repository ![](a place to store your website’s code)
-    For repository name, enter yourgithubusername.github.io
+- First, sign up on GitHub.
+- Then, create a new repository ![](a place to store your website’s code)
+- For repository name, enter yourgithubusername.github.io
+  - For me, that would be congodsted.github.io
 
-    For me, that would be congodsted.github.io
-
-    Leave all the settings as default, and choose Create Repository.
-    You can either use the GitHub Desktop app to synchronise your changes, or just upload your files directly. For now, we’ll just upload our site there.
-    From your repository, click Add Files, and choose Upload Files.
-    Either drag and drop your files into the provided box, or click to find them on your machine like you would on Canvas or Google Drive.
-    If you want, you can add a description of your changes in the first textbox.
-    Click commit changes.
-    You’re done! Head to yourgithubusername.github.io and see your site.
+- Leave all the settings as default, and choose Create Repository.
+- You can either use the GitHub Desktop app to synchronise your changes, or just upload your files directly. For now, we’ll just upload our site there.
+- From your repository, click Add Files, and choose Upload Files.
+- Either drag and drop your files into the provided box, or click to find them on your machine like you would on Canvas or Google Drive.
+- If you want, you can add a description of your changes in the first textbox.
+- Click commit changes.
+- You’re done! Head to yourgithubusername.github.io and see your site.
 
 ## Using Word or Google Docs
 
