@@ -1,6 +1,6 @@
 # Rust on ESP32s
 
-Why would you want to use Rust? TL;DR: The performance of C++, with better security. Also, it's cool. 🦀 🦀
+Why would you want to use [Rust](https://www.rust-lang.org/)? TL;DR: The performance of C++, with better safety. Also, it's cool. 🦀 🦀 🦀
 
 An associated GitHub repo was created at <https://github.com/Norse-IoT/rust-on-esp32>.
 
@@ -37,7 +37,7 @@ cargo generate esp-rs/esp-template
 ```
 ```bash
 cargo espflash flash <SERIAL>
-# for me, this was cargo espflash flash --port /dev/ttyUSB0 
+# for me, this was cargo espflash flash --port /dev/ttyUSB0
 ```
 
 # Internal Blink project
