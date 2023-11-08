@@ -1,6 +1,6 @@
 # Rust on ESP32s
 
-Some club members were interested in running Rust programs on ESP32s.
+Why would you want to use Rust? TL;DR: The performance of C++, with better security. Also, it's cool. 🦀 🦀
 
 An associated GitHub repo was created at <https://github.com/Norse-IoT/rust-on-esp32>.
 
@@ -38,5 +38,51 @@ cargo generate esp-rs/esp-template
 ```bash
 cargo espflash flash <SERIAL>
 # for me, this was cargo espflash flash --port /dev/ttyUSB0 
+```
+
+# Internal Blink project
+
+The standard sanity check after creating a new project is to create a project that blinks the internal led.
+
+In Rust, we can use:
+
+```rust
+//! Blinks the internal led (GPIO pin 2)
+//! built for ESP32
+//! modified from https://github.com/esp-rs/esp-idf-hal/blob/master/examples/blinky.rs
+//! by Zack Sargent
+
+use esp_idf_hal::delay::FreeRtos;
+use esp_idf_hal::gpio::*;
+use esp_idf_hal::peripherals::Peripherals;
+
+fn main() -> anyhow::Result<()> {
+	/* setup - runs once on board start */
+	// It is necessary to call this function once. Otherwise some patches to the runtime
+    // implemented by esp-idf-sys might not link properly. See https://github.com/esp-rs/esp-idf-template/issues/71
+	esp_idf_hal::sys::link_patches();
+
+	esp_idf_svc::log::EspLogger::initialize_default(); // initalize logger
+
+	// The `?` at the end of the following lines means:
+	// "If this command returns an error, return the main function early with the error the function returned"
+	// It's like throwing an exception.
+
+	let peripherals = Peripherals::take()?; // get list of peripherals
+	let mut led = PinDriver::output(peripherals.pins.gpio2)?; // take the GPIO pin 2 as an output device
+
+	log::info!("Connected! Blinking..");
+
+	/* loop - equivalent to a `while(true)` loop in C++ */
+	loop {
+		led.set_high()?;
+		FreeRtos::delay_ms(1000);
+
+		led.set_low()?;
+		FreeRtos::delay_ms(1000);
+	}
+}
+
+// run with `cargo run` or `cargo espflash flash --port <SERIAL>`
 ```
 
