@@ -245,3 +245,27 @@
         </table>
     </div>
 </div>
+
+
+## Basic Internal-Blink example
+
+The following code will toggle the internal led on an ESP32 on or off every second.
+
+From [GitHub](https://github.com/Norse-IoT/internal-blink):
+
+```cpp
+int pin = 2;
+
+void setup() {
+  pinMode(pin, OUTPUT);
+}
+
+bool state = HIGH;
+
+void loop() {
+  digitalWrite(pin, state);
+  state = !state;
+  delay(1000);
+}
+```
+
