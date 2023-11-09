@@ -16,3 +16,7 @@ extra_javascript:
   - javascripts/removeWatermark.js
 markdown_extensions:
   - abbr
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences 
+
