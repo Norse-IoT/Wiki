@@ -1,6 +1,6 @@
 site_name: Norse IoT Club - Wiki
 theme:
-  name: material
+  name: readthedocs
   palette:
     scheme: slate
   icon: assets/favicon.png

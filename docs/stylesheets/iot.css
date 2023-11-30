@@ -1,8 +1,72 @@
-.md-header, .md-tabs {
-    background-color: #212529;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Source+Sans+3&display=swap');
+
+.rst-content code, .rst-content tt {
+    font-family: 'Fira Code';
+    background-color: #272a35 !important;
+    border-color: transparent ;
 }
-.md-logo svg {
-    content: "test";
+
+.highlight, .rst-content pre code {
+    background-color: #272a35 !important;
+
+}
+
+section a:visited, section a {
+   color: #ffc107 !important;
+}
+section a:hover {
+    color: #ffca2c !important;
+}
+
+.wy-body-for-navmk, .wy-nav-content, body, .wy-side-nav-search, .rst-versions  {
+    background-color: #1e2129 !important;
+}
+
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    background-color: #393f4f !important;
+}
+
+.rst-content pre code, .wy-body-for-navmk, .wy-nav-content, body, .wy-side-nav-search, .rst-versions, th, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    color: white !important;
+}
+
+.wy-nav-content {
+    max-width: unset !important;
+    height: 100vh;
+}
+
+nav, .rst-versions .rst-current-version {
+    background-color: #212529 !important;
+    box-shadow: 0 0 .2rem #0000001a,0 .2rem .4rem #0003;
+}
+
+.rst-versions .rst-current-version {
+    text-transform: uppercase;
+}
+
+.rst-current-version span {
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: #ffca2c !important;
+    border-radius: 500px;
+
+}
+
+.rst-current-version span a {
+    color: black !important;
+
+}
+
+.wy-side-nav-search .wy-dropdown > a, .wy-side-nav-search > a {
+    text-transform:uppercase
+}
+.wy-side-nav-search input[type="text"] {
+    background-color: #1e2129 !important;
+    border-color: #ffca2c !important;
+    color: white !important;
+    filter: drop-shadow(0px 0px 50px grey);
 }
 
 .digital-pin {

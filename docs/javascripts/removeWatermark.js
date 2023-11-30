@@ -4,5 +4,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 function updateCredits(){
-    document.querySelector('.md-copyright').innerHTML = `© ${new Date().getFullYear()} Norse IoT Club`;
+    document.querySelector('footer').innerHTML = `© ${new Date().getFullYear()} Norse IoT Club`;
 }
