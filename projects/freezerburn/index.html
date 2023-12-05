@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Project Freezerburn - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project Freezerburn";
+        var mkdocs_page_input_path = "projects/freezerburn.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../esp32/">ESP-32 Dev Information</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../frankencaster/">Frankencaster</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Project Freezerburn</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#deliverables">Deliverables</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#solutions">Solutions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#open-questions">Open Questions</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../occupancy/">The Occupancy Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">Project Freezerburn</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-freezerburn">Project Freezerburn</h1>
+<p>This project was originally pitched by Professor Sarah Mann for the IoT Club as a way to detect when her freezers were open. Sarah Mann owns a farm in Kentucky that has multiple freezers spread across several buildings, so any solution would need to be scalable.</p>
+<p>@rweberhorowitz is our point of contact for Sarah Mann on this project. </p>
+<h2 id="deliverables">Deliverables</h2>
+<ul>
+<li>Push notifications when freezers are left open</li>
+<li>Status page where freezer status (open/closed) can be viewed.</li>
+<li>Additional data when possible, including temperature over time.</li>
+</ul>
+<h2 id="solutions">Solutions</h2>
+<ul>
+<li>Read switches to detect open/closed with magnetic force.</li>
+<li>Roll ball switch embedded in door (requires door modification, may not be ideal on a climate controlled freezer)</li>
+<li>Limit switch</li>
+</ul>
+<h2 id="open-questions">Open Questions</h2>
+<ul>
+<li>What types of freezers does she have?</li>
+<li>How many freezers does she have?</li>
+<li>Can integrate with existing smart home systems, or use the Matter protocol?</li>
+<li>Do we want an app to send push notifications?</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../frankencaster/" class="btn btn-neutral float-left" title="Frankencaster"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../occupancy/" class="btn btn-neutral float-right" title="The Occupancy Project">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../frankencaster/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../occupancy/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
