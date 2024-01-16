@@ -21,7 +21,7 @@
 | `015`       | TechOlympics Humidity Sensor  | Chris Brewer         |
 | `016`       | TechOlympics Humidity Sensor  | Chris Brewer         |
 | `017`       | Fractal Zoom           | Riley Weber-Horowitz |
-| `018`       | Free                   | N/A                  |
+| `018`       | Morse Code Hello World | Pam Pepper           |
 | `019`       | Free                   | N/A                  |
 | `020`       | Zack Light Show Demo   | Zack Sargent         |
 | `021`       | Freezerburn Project    | Joseph Galluci       |
