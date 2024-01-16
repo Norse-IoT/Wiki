@@ -1,4 +1,5 @@
 ## Norse IoT Inventory
+This inventory reflects all hardware owned and used by the club.
 
 ### ESP-32s
 
@@ -33,3 +34,4 @@
 | `027`       | Ultrasonic Percentage  | Chris Brewer         |
 | `028`       | Websocket LED Demo     | Chris Brewer         |
 | `029`       | Frankencaster          | Cassian Godsted      |
+| `030`       | Free          | N/A      |
