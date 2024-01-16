@@ -1,4 +1,4 @@
-# ESP-32 Dev Information
+# Technical Info (ESP-32)
 
 ### Pinout Guide
 <div class="md-typeset__scrollwrap">
