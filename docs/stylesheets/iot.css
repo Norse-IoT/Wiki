@@ -99,6 +99,8 @@ nav, .rst-versions .rst-current-version {
     padding-left: 5px;
     background-color: #ffca2c !important;
     border-radius: 500px;
+    color: black;
+    margin-bottom: 10px;
 
 }
 

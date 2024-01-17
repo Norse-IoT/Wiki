@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     updateCredits();
+    editButton()
 });
 
 
@@ -39,4 +40,22 @@ function updateCredits(){
         <path id="T" class="cls-2" d="M236,216.86h-14.75v48.62c0,2.81-.63,4.85-1.9,6.25-1.26,1.33-2.88,2.04-4.85,2.04s-3.65-.7-4.92-2.04-1.9-3.44-1.9-6.18v-48.62h-14.75c-2.32,0-4-.49-5.13-1.55-1.12-1.05-1.69-2.39-1.69-4,0-1.76,.56-3.09,1.76-4.07s2.88-1.48,5.06-1.48h43.07c2.32,0,4.07,.49,5.2,1.55s1.69,2.39,1.69,4.07-.56,3.02-1.76,4c-1.05,.91-2.81,1.41-5.13,1.41Z"/>
       </g>
     </svg></div><span>Norse IoT Club - Wiki</span>`
+}
+
+//Add edit button to sidebar
+function editButton() {
+  let url = window.location.href.replace(window.location.origin, "")
+  if (url == "/projects/") {
+    url = `https://github.com/Norse-IoT/Wiki/blob/main/docs/projects/index.md`
+  }
+  else if (url == "/") {
+    url = `https://github.com/Norse-IoT/Wiki/blob/main/docs/index.md`
+  
+  }
+  else {
+    url = url.slice(0, -1)
+    url = `https://github.com/Norse-IoT/Wiki/blob/main/docs` + url + ".md"
+    
+  }
+  document.querySelector(".rst-versions").innerHTML = `<a href="${url}"><span class="rst-current-version" data-toggle="rst-current-version"><span>Edit on GitHub</span></a>`
 }
