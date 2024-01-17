@@ -2,7 +2,7 @@
 
 The Norse IoT club is focused on student led research and projects concerning Internet of Things devices and applications. Through this student organization, we hope to foster a community for students, faculty, alumni, and industry establishments that are enthusiastic about the opportunities IoT has to offer.
 
-**Club Resources:**
+## Club Resources 
 
 - Our [Website]( https://norseiot.club/) contains general information about the club.
 - Our [GitHub](https://github.com/Norse-IoT) contains project code, making it a great place to start learning.
