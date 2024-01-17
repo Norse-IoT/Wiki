@@ -96,6 +96,8 @@ void loop() {
 
 4. Press the **Upload** button in the top left corner. Your code will begin to compile.
 
+![Screenshot of the upload button in the top left corner.](assets/getting-started-upload.png)
+
 5. When you see dots begin to move across the screen in the bottom terminal, press and hold the button to the right of the Micro-USB power connector to accept the new code.
 
 6. Once you see the text "Hard resetting..." in the bottom of the terminal, you should be done uploading and can release the button.
