@@ -149,6 +149,10 @@ nav, .rst-versions .rst-current-version {
 
 }
 
+.hljs-meta .hljs-string, .hljs-regexp, .hljs-string {
+    color: #5353ff !important
+}
+
 #social-block .item {
     padding-right: 5px;
     padding-left: 5px;
