@@ -8,7 +8,7 @@ We'll start by installing the [Arduino IDE 2.0](https://www.arduino.cc/en/Tutori
 
 You can [download the IDE from the Arduino website](https://www.arduino.cc/en/software) for your operating system.
 
-![Screenshot of the Arduino website, showing the various download options](assets/getting-started-download.png)
+![Screenshot of the Arduino website, showing the various download options](../assets/getting-started-download.png)
 
 - **Windows**: Download the version for Win 10 and newer, and run the executable.
 - **Linux**: Download the AppImage, and run the executable.
@@ -28,7 +28,7 @@ The next step is adding ESP-32s to the list of devices Arduino IDE can install t
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 
-![Screenshot of the Arduino IDE, showing the Additional Board Manager URLs textbox.](assets/getting-started-preferences.png)
+![Screenshot of the Arduino IDE, showing the Additional Board Manager URLs textbox.](../assets/getting-started-preferences.png)
 
 3. Open the Boards Manager by clicking the Boards Manager icon on the sidebar - the icon below the folder icon.
 
@@ -44,7 +44,7 @@ On Windows, Arduino needs an additional driver to write to ESP-32 devices. You c
 
 1. Extract and open the downloaded ZIP file.
 
-![Screenshot of the downloaded driver ZIP](assets/getting-started-zip.png)
+![Screenshot of the downloaded driver ZIP](../assets/getting-started-zip.png)
 
 2. Launch **CP210xVCPInstaller_x64.exe** and follow the installation wizard.
 
@@ -96,7 +96,7 @@ void loop() {
 
 4. Press the **Upload** button in the top left corner. Your code will begin to compile.
 
-![Screenshot of the upload button in the top left corner.](assets/getting-started-upload.png)
+![Screenshot of the upload button in the top left corner.](../assets/getting-started-upload.png)
 
 5. When you see dots begin to move across the screen in the bottom terminal, press and hold the button to the right of the Micro-USB power connector to accept the new code.
 
