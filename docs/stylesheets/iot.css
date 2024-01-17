@@ -158,7 +158,7 @@ nav, .rst-versions .rst-current-version {
     color: #ffca2c !important;
 }
 
-#social-block a {
+#social-block .social {
     font-size: 28px;
 
 }
