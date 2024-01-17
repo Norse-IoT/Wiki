@@ -158,8 +158,9 @@ nav, .rst-versions .rst-current-version {
     padding-left: 5px;
     color: #727272 !important;
 }
-#social-block .item:hover {
+#social-block .item:hover, .social.item svg:hover {
     color: #ffca2c !important;
+    fill: #FFCA2C !important
 }
 
 #social-block .social {
