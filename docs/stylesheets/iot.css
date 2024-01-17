@@ -148,3 +148,33 @@ nav, .rst-versions .rst-current-version {
     color: #ff2c2c
 
 }
+
+#social-block .item {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #727272 !important;
+}
+#social-block .item:hover {
+    color: #ffca2c !important;
+}
+
+#social-block a {
+    font-size: 28px;
+
+}
+
+footer {
+    font-size: 16px;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+.social.item svg {
+    width: 28px;
+    height: 28px;
+    fill: #727272;
+}
+#social-block {
+    display: flex;
+    align-items: center;
+}
