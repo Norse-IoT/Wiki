@@ -32,6 +32,31 @@ section a:hover {
     color: #ffca2c !important;
 }
 
+.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a {
+    background-color: #292d3a;
+    color: white;
+    border: #1f222b !important;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #2f3444;
+
+}
+
+.toctree-l2 {
+    background-color: #242534 !important;
+    color: white !important;
+}
+.wy-menu-vertical li.current a:hover {
+    background-color: #33365a !important;
+}
+
+.wy-menu-vertical li.toctree-l2 a {
+    color: #b9b9b9;
+    border: #1f222b !important;
+
+}
+
 .wy-body-for-navmk, .wy-nav-content, body, .rst-versions  {
     background-color: #1e2129 !important;
 }
