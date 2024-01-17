@@ -11,6 +11,20 @@
 
 }
 
+.iot {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+}
+
+.iot svg {
+    width: 40%;
+    padding-bottom: .5em;
+}
+.iot span {
+    text-transform: none !important;
+}
+
 section a:visited, section a {
    color: #ffc107 !important;
 }
@@ -63,10 +77,10 @@ nav, .rst-versions .rst-current-version {
     text-transform:uppercase
 }
 .wy-side-nav-search input[type="text"] {
-    background-color: #1e2129 !important;
+    background-color: transparent !important;
     border-color: #ffca2c !important;
     color: white !important;
-    filter: drop-shadow(0px 0px 50px grey);
+    filter: drop-shadow(0px 0px 50px rgb(65, 65, 65));
 }
 
 .digital-pin {
