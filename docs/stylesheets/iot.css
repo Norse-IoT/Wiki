@@ -25,7 +25,7 @@
     text-transform: none !important;
 }
 
-section a:visited, section a {
+section a:visited, section a, a:visited code, a code {
    color: #ffc107 !important;
 }
 section a:hover {
@@ -40,6 +40,11 @@ section a:hover {
 
 .wy-menu-vertical a:hover {
     background-color: #2f3444;
+
+}
+
+div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    background-color: #212529 !important;
 
 }
 
