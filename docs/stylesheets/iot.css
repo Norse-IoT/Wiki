@@ -32,8 +32,12 @@ section a:hover {
     color: #ffca2c !important;
 }
 
-.wy-body-for-navmk, .wy-nav-content, body, .wy-side-nav-search, .rst-versions  {
+.wy-body-for-navmk, .wy-nav-content, body, .rst-versions  {
     background-color: #1e2129 !important;
+}
+
+.wy-nav-shift, .wy-nav-side, .wy-side-nav-search {
+    background: #212529 !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
