@@ -2,7 +2,7 @@
 
 This tutorial covers how to get started developing for the ESP-32 using the Arduino IDE. These instructions will cover installing Arduino IDE on Windows, Mac, or Linux, installing any needed drivers, as well the add-on for Arduino to use our ESP-32 microcontrollers.
 
-# Installing Arduino IDE
+## Installing Arduino IDE
 
 We'll start by installing the [Arduino IDE 2.0](https://www.arduino.cc/en/Tutorial/getting-started-with-ide-v2).
 
@@ -16,7 +16,7 @@ You can [download the IDE from the Arduino website](https://www.arduino.cc/en/so
 
 If you run into issues, you can find more information in the [Arduino Docs](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/).
 
-# Adding ESP-32 Devices into the Board Manager
+## Adding ESP-32 Devices into the Board Manager
 
 The next step is adding ESP-32s to the list of devices Arduino IDE can install to.
 
@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 4. Search for ESP32, and press the install button for the esp32 by ExpressIf Systems.
 
-# Installing the Drivers (Windows)
+## Installing the Drivers (Windows)
 
 This section is only needed when installing Arduino on Windows 10 and Windows 11.
 
@@ -48,7 +48,7 @@ On Windows, Arduino needs an additional driver to write to ESP-32 devices. You c
 
 2. Launch **CP210xVCPInstaller_x64.exe** and follow the installation wizard.
 
-# Installing pyserial and Updating Permissions (Linux)
+## Installing pyserial and Updating Permissions (Linux)
 
 This section is only needed when installing Arduino on Linux desktops like Ubuntu.
 
@@ -68,7 +68,7 @@ pip install pyserial
 sudo chmod 666 /dev/ttyUSB0
 ```
 
-# Testing the Installation
+## Testing the Installation
 
 Plug the ESP-32 board into your computer, and follow these steps in the Arduino IDE.
 
@@ -106,6 +106,6 @@ void loop() {
 
 If all went according to plan, your ESP-32 is now flashing its blue LED.
 
-# More Info
+## More Info
 
 If all went well, you're ready to go developing ESP-32 projects with the Norse IoT club! We have various projects in our Wiki, and you can look around on the internet to find additional project ideas.
