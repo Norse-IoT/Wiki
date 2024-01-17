@@ -105,7 +105,7 @@ If you don’t like any of the templates, you can use Google Docs or Microsoft W
 
 To edit the file, we recommend using Visual Studio Code. It is available for all platforms, including ChromeOS through a web app. You can use Notepad, but the interface will be less user friendly.
 
-#### Open the file in Visual Studio Code (or Notepad)
+#### Open the file in Visual Studio Code \(or Notepad\)
 https://norseiot.club/Website-Workshops/Instructions/images/image4.png
 The first half of the template contains the design - or CSS code. The second half contains the content and structure of the document - or HTML code. Scroll down past the CSS to the `<main>` tag. (You can use CTRL-F)
 
@@ -131,7 +131,7 @@ Copy the index.html file that you edited from your Downloads folder to the WWW f
 If you are unable to connect to your network drive, or want to ensure you can keep your site even after you graduate, you can use GitHub Pages in order to host your site on their servers.
 
 - First, sign up on GitHub.
-- Then, create a new repository ![](a place to store your website’s code)
+- Then, create a new repository (a place to store your website’s code)
 - For repository name, enter yourgithubusername.github.io
   - For me, that would be congodsted.github.io
 
