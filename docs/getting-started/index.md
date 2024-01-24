@@ -12,6 +12,9 @@ You can [download the IDE from the Arduino website](https://www.arduino.cc/en/so
 
 - **Windows**: Download the version for Win 10 and newer, and run the executable.
 - **Linux**: Download the AppImage, and run the executable.
+> On Fedora Linux 39, Zack had issues with the AppImage. The [IDEv2 flatpak package](https://flathub.org/apps/cc.arduino.IDE2) worked first try.
+> 
+> On Ubuntu 22.04 LTS, Cassian had no issues with the AppImage.
 - **macOS**: Download the Apple Silicon version for newer Macs, and the Intel version for older Macs. Open the downloaded disk image, and copy the Arduino IDE to your application folder.
 
 If you run into issues, you can find more information in the [Arduino Docs](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/).
