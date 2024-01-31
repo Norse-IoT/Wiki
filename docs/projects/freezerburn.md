@@ -23,14 +23,30 @@ This project was originally pitched by Professor Sarah Mann for the IoT Club as 
 
 ## Email Interview Transcript
 1. What type of freezer do you use (chest-shaped or upright)? If you have model number(s), that would work too.
-2 freezers are uprights and 2 are chest-type
+
+**2 freezers are uprights and 2 are chest-type**
+
+
 2. Would each freezer location have access to WiFi?
-The 2 uprights and 1 chest-type have access to wifi (these 3 are in my basement). The fourth freezer does not currently have access to wifi (this one is located in a different location altogether)
+   
+**The 2 uprights and 1 chest-type have access to wifi (these 3 are in my basement). The fourth freezer does not currently have access to wifi (this one is located in a different location altogether)**
+
+
 3. How spread out are the freezers from one another?
-The 2 uprights are sitting side-by-side and the 1 chest is about 12 feet away but all in the same basement.  The fourth freezer is a few miles away.
+
+**The 2 uprights are sitting side-by-side and the 1 chest is about 12 feet away but all in the same basement.  The fourth freezer is a few miles away.**
+
+
 4. Is there adequate access to power at each freezer location?
-Yes
+
+**Yes**
+
+
 5. Do any of the freezers already have some sort of electronic display?
-No
+
+**No**
+
+
 6. How long are the doors usually left open to move product?
-Usually just long enough to get something out for summer.  A couple of times per year, they are opened longer when restocking, etc.
+
+**Usually just long enough to get something out for summer.  A couple of times per year, they are opened longer when restocking, etc.**
