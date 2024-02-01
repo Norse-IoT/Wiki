@@ -1,6 +1,8 @@
 # Frankencaster
 Pinout info for an ESP-32 powered Rock Band guitar.
 
+The goal of the first prototype was to design a solderless replacement for the internal board of a Rock Band Genericaster. A majority of other alternatives make use of a Raspberry Pi Pico, which requires soldering. Future reworks will focus on building new guitars that don't require any used hardware.
+
 [Code on Github](https://github.com/Norse-IoT/Frankencaster)
 
 | Pin      | Button | Mapping |
