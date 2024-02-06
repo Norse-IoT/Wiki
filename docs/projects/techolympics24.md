@@ -21,6 +21,7 @@ void loop() {
 }
 ```
 **STEP 1: Library Pull**
+
 This section of the code will instruct the ESP32 on what libraries it should pull information from. After including the libraries, the code instructs the board on how to connect to our Norse IoT WiFi server.
 
 ```
@@ -45,6 +46,24 @@ DHTesp dht;
 int quant = 20;
 int send_delay = 2000;
 int send_passed = 0;
+```
+
+**STEP 2: Connecting to the Web**
+
+This step continues the process of connecting the board to the WiFi.
+
+```
+void setup() {
+  Serial.begin(SERIAL_BAUD);
+
+  pinMode(LED_BUILTIN, OUTPUT);
+
+  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+  
+  InitWiFi();
+
+  dht.setup(DHT_PIN, DHTesp::DHTTYPE);
+}
 ```
 
 
