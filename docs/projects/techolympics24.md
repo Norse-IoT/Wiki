@@ -20,6 +20,33 @@ void loop() {
   delay(1000);
 }
 ```
+**STEP 1: Library Pull**
+This section of the code will instruct the ESP32 on what libraries it should pull information from. After including the libraries, the code instructs the board on how to connect to our Norse IoT WiFi server.
+
+```
+#define SERIAL_BAUD    115200
+
+#include <DHTesp.h>
+#include <WiFi.h>
+#include <ThingsBoard.h>
+
+
+
+#define DHTTYPE    DHT22 // DHT11, DHT22, DHT21
+#define DHT_PIN    4
+#define TOKEN     "21asd7"
+#define THINGSBOARD_SERVER  "10.0.1.2" 
+#define WIFI_AP_NAME        ""
+#define WIFI_PASSWORD       ""
+WiFiClient espClient;
+ThingsBoard tb(espClient);
+int status = WL_IDLE_STATUS;
+DHTesp dht;
+int quant = 20;
+int send_delay = 2000;
+int send_passed = 0;
+```
+
 
 The final expected code will be published here ↓
 
