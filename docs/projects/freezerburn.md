@@ -56,6 +56,9 @@ This project was originally pitched by Professor Sarah Mann for the IoT Club as 
 
 
 **Pinout Information**
+
 Red GIOP21-COM.
+
 Blue GNDchannel-N.C.
+
 Yellow espGND-GNDchannel
