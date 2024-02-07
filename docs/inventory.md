@@ -26,7 +26,7 @@ This inventory reflects all hardware owned and used by the club.
 | `019`       | Free                   | N/A                  |
 | `020`       | Zack Light Show Demo   | Zack Sargent         |
 | `021`       | Freezerburn Project    | Joseph Galluci       |
-| `022`       | Basic Button Example   | Chris Brewer         |
+| `022`       | Free                   | N/A                  |
 | `023`       | Ultrasonic Demo        | Christian Lane       |
 | `024`       | Ultrasonic             | Grace Wu             |
 | `025`       | Our Favourite Child    | Grace Wu             |
@@ -34,4 +34,6 @@ This inventory reflects all hardware owned and used by the club.
 | `027`       | Ultrasonic Percentage  | Chris Brewer         |
 | `028`       | Websocket LED Demo     | Chris Brewer         |
 | `029`       | Frankencaster          | Cassian Godsted      |
-| `030`       | Free          | N/A      |
+| `030`       | Free                   | N/A      |
+| `031`       | TechOlympics Humidity Sensor      | Chris Brewer      |
+
