@@ -50,3 +50,12 @@ This project was originally pitched by Professor Sarah Mann for the IoT Club as 
 6. How long are the doors usually left open to move product?
 
 **Usually just long enough to get something out for summer.  A couple of times per year, they are opened longer when restocking, etc.**
+
+
+![projectFreezerBurnDoc](https://github.com/Norse-IoT/Wiki/assets/123127425/28d93551-af44-49e2-bcd2-ec8ed11fbfb0)
+
+
+**Pinout Information**
+Red GIOP21-COM.
+Blue GNDchannel-N.C.
+Yellow espGND-GNDchannel
