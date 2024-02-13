@@ -115,7 +115,40 @@ if (isnan(measurements.humidity) || isnan(measurements.temperature)) {
   tb.loop();
 ```
 
+**STEP 5: Ensuring a Stable Connection**
 
+```
+void InitWiFi()
+{
+  Serial.println("");
+  Serial.print("Connecting to AP as ");
+  Serial.print(WiFi.macAddress());
+  
+  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  blinkLED(3,120,120);
+
+  Serial.println("");
+  Serial.print("Connected to AP with IP address ");
+  Serial.println(WiFi.localIP());
+}
+```
+
+**STEP 6: Finalize with LED**
+
+```
+void blinkLED(int numberOfFlashes, int durationOn, int durationOff) {
+  for(int i = 0; i < numberOfFlashes; i++){
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(durationOn);
+    digitalWrite(LED_BUILTIN, LOW);
+    delay(durationOff);
+  }
+}
+```
 
 
 
