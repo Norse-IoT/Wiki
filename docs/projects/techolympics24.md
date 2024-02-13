@@ -94,6 +94,9 @@ delay(quant);
 ```
 
 **STEP 4: Measure and Report Humidity Data**
+First, we check how long it has been since the measurements have last been updated.
+If it has been long enough, we update the measurements by getting the Temp and Humidity from the ESP32.
+
 
 ```
   if (send_passed > send_delay) {
