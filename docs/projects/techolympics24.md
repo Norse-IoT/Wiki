@@ -66,6 +66,59 @@ void setup() {
 }
 ```
 
+**STEP 3: Integrating the Server**
+
+In this section, the ESP32 is connected to our server/WiFi. If the board fails to connect, the serial port will display "Failed!"
+
+```
+void loop() {  
+delay(quant);
+
+  send_passed += quant;
+
+  if (WiFi.status() != WL_CONNECTED) {
+    InitWiFi();
+    return;
+  }
+ if (!tb.connected()) {
+    Serial.print("Connecting to ");
+    Serial.print(THINGSBOARD_SERVER);
+    Serial.print(" with token ");
+    Serial.println(TOKEN);
+    if (!tb.connect(THINGSBOARD_SERVER, TOKEN)) {
+      Serial.println("Failed!");
+      return;
+    }
+  }
+
+```
+
+**STEP 4: Measure and Report Humidity Data**
+
+```
+  if (send_passed > send_delay) {
+    Serial.print("Sending data ");
+    TempAndHumidity measurements = dht.getTempAndHumidity(); 
+if (isnan(measurements.humidity) || isnan(measurements.temperature)) {
+      Serial.println("**Failed to read DHT sensor!**");
+    } else {
+      tb.sendTelemetryFloat("temperature", measurements.temperature);
+      tb.sendTelemetryFloat("humidity", measurements.humidity);
+      Serial.print(measurements.temperature);
+      Serial.print("c / ");
+      Serial.print(measurements.humidity);
+      Serial.println("%).");
+      blinkLED(1,250,0);
+    }
+    send_passed = 0;
+  }
+  tb.loop();
+```
+
+
+
+
+
 
 The final expected code will be published here ↓
 
