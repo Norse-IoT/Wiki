@@ -5,22 +5,23 @@ This inventory reflects all hardware owned and used by the club.
 
 | ID          | Description            | Owner                |
 | ----------- | ---------------------- | ----                 |
-| `001`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `002`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `003`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `004`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `005`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `006`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `007`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `008`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `009`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `010`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `011`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `012`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `013`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `014`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `015`       | TechOlympics Humidity Sensor  | Chris Brewer         |
-| `016`       | TechOlympics Humidity Sensor  | Chris Brewer         |
+| `000`       | Humidity Sensor Reference Model  | Chris Brewer         |
+| `001`       | Free - Breadboardless  | N/A         |
+| `002`       | Free - Breadboardless  | N/A         |
+| `003`       | Free - Breadboardless  | N/A         |
+| `004`       | Free - Breadboardless  | N/A         |
+| `005`       | Free - Breadboardless  | N/A         |
+| `006`       | Free - Breadboardless  | N/A         |
+| `007`       | Free - Breadboardless  | N/A         |
+| `008`       | Free - Breadboardless  | N/A         |
+| `009`       | Free - Breadboardless  | N/A         |
+| `010`       | Free - Breadboardless  | N/A         |
+| `011`       | Free - Breadboardless  | N/A         |
+| `012`       | Free - Breadboardless  | N/A         |
+| `013`       | Free - Breadboardless  | N/A         |
+| `014`       | Free - Breadboardless  | N/A         |
+| `015`       | Free - Breadboardless  | N/A         |
+| `016`       | MIA  | Chris Brewer         |
 | `017`       | Fractal Zoom           | Riley Weber-Horowitz |
 | `018`       | Morse Code Hello World | Pam Pepper           |
 | `019`       | Free                   | N/A                  |
@@ -35,5 +36,5 @@ This inventory reflects all hardware owned and used by the club.
 | `028`       | Websocket LED Demo     | Chris Brewer         |
 | `029`       | Frankencaster          | Cassian Godsted      |
 | `030`       | Free                   | N/A      |
-| `031`       | TechOlympics Humidity Sensor      | Chris Brewer      |
+| `031`       | Free      | N/A      |
 
