@@ -23,7 +23,7 @@ This inventory reflects all hardware owned and used by the club.
 | `015`       | Free - Breadboardless  | N/A         |
 | `016`       | MIA  | Chris Brewer         |
 | `017`       | Fractal Zoom           | Riley Weber-Horowitz |
-| `018`       | Morse Code Hello World | Pam Pepper           |
+| `018`       | Free                   | NA                   |
 | `019`       | Free                   | N/A                  |
 | `020`       | Zack Light Show Demo   | Zack Sargent         |
 | `021`       | Freezerburn Project    | Joseph Galluci       |
