@@ -9,7 +9,7 @@ This inventory reflects all hardware owned and used by the club.
 | `001`       | Free - Breadboardless  | N/A         |
 | `002`       | Free - Breadboardless  | N/A         |
 | `003`       | Free - Breadboardless  | N/A         |
-| `004`       | Free - Breadboardless  | N/A         |
+| `004`       | Free  | N/A         |
 | `005`       | Free - Breadboardless  | N/A         |
 | `006`       | Free - Breadboardless  | N/A         |
 | `007`       | Free - Breadboardless  | N/A         |
