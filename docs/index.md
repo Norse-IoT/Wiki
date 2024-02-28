@@ -4,7 +4,7 @@ The Norse IoT club is focused on student led research and projects concerning In
 
 ## Club Resources 
 
-- Our [Website]( https://norseiot.club/) contains general information about the club.
+- Our [Website](https://norseiot.club/) contains general information about the club.
 - Our [GitHub](https://github.com/Norse-IoT) contains project code, making it a great place to start learning.
 - Our [Discord](discord.norseiot.club) is a great way to connect with members of the community.
 - Our [Google Drive](https://drive.google.com/drive/u/0/folders/1_bXkjTFmD5fFj2BjkoAQpjkyQ-yj5juh) contains miscellaneous project resources, as well as club marketing materials.
@@ -13,7 +13,7 @@ The Norse IoT club is focused on student led research and projects concerning In
 Edit access to the GitHub and Google Drive are available on request. Just DM one of our Officers on Discord with your GitHub username or Google Drive email.
 
 ## Getting Started
-- A great place to start is our [Getting Started guide](getting-started-esp.md) for ESP-32 development. ESP-32 micrcocontrollers are the basis of most Norse IoT projects, and this guide covers how to set up an ESP-32 and start programming for it.
+- A great place to start is our [Getting Started guide](getting-started) for ESP-32 development. ESP-32 micrcocontrollers are the basis of most Norse IoT projects, and this guide covers how to set up an ESP-32 and start programming for it.
 
 ## What's this Wiki?
 
