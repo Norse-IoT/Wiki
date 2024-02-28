@@ -45,11 +45,20 @@ This section is only needed when installing Arduino on Windows 10 and Windows 11
 
 On Windows, Arduino needs an additional driver to write to ESP-32 devices. You can [download the driver from Silicon Labs' website](https://www.silabs.com/documents/public/software/CP210x_Windows_Drivers.zip).
 
-1. Extract and open the downloaded ZIP file.
+1. Open the ZIP file, and from there choose to extract the file.
 
-![Screenshot of the downloaded driver ZIP](../assets/getting-started-zip.png)
+![Screenshot of the downloaded driver ZIP](../assets/getting-started-windows-open.png)
+
+![Screenshot of the Windows extract menu](../assets/getting-started-windows-extract.png)
+
 
 2. Launch **CP210xVCPInstaller_x64.exe** and follow the installation wizard.
+
+![Screenshot of the extracted driver ZIP](../assets/getting-started-windows-open.png)
+
+![Screenshot of the Driver installer](../assets/getting-started-windows-install.png)
+
+
 
 ## Installing pyserial and Updating Permissions (Linux)
 
@@ -77,7 +86,11 @@ Plug the ESP-32 board into your computer, and follow these steps in the Arduino 
 
 1. Click the Select Board dropdown. If you see a board show up, you're on the right track! Click the Unknown board.
 
+![Screenshot of the upload button in the top left corner.](../assets/getting-started-select-board.png)
+
 2. You'll then be brought to the Other Boards menu. Search for **devkit** and click on the **DOIT ESP32 DEVKIT V1**.
+
+![Screenshot of the upload button in the top left corner.](../assets/getting-started-other-board.png)
 
 3. Copy and paste the following code into the IDE to test the Internal Blink demo.
 
