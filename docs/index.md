@@ -6,7 +6,7 @@ The Norse IoT club is focused on student led research and projects concerning In
 
 - Our [Website]( https://norseiot.club/) contains general information about the club.
 - Our [GitHub](https://github.com/Norse-IoT) contains project code, making it a great place to start learning.
-- Our Discord is a great way to connect with members of the community.
+- Our [Discord](discord.norseiot.club) is a great way to connect with members of the community.
 - Our [Google Drive](https://drive.google.com/drive/u/0/folders/1_bXkjTFmD5fFj2BjkoAQpjkyQ-yj5juh) contains miscellaneous project resources, as well as club marketing materials.
 - Our [CampusGroups](https://norseiot.club/campusgroups) contains official club details, including a list of upcoming meetings.
 
