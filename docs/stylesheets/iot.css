@@ -74,9 +74,11 @@ div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-tabl
     background-color: #393f4f !important;
 }
 
-.rst-content pre code, .wy-body-for-navmk, .wy-nav-content, body, .wy-side-nav-search, .rst-versions, th, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+.rst-content pre code, .wy-body-for-navmk, .wy-nav-content, body, label, .wy-side-nav-search, .rst-versions, th, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
     color: white !important;
 }
+
+
 
 .wy-nav-content {
     max-width: unset !important;
@@ -182,4 +184,8 @@ footer {
 #social-block {
     display: flex;
     align-items: center;
+}
+
+.flex {
+    display: flex;
 }
