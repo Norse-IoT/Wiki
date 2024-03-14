@@ -43,4 +43,4 @@ You can use the following command to begin previewing your changes.
 ```
 mkdocs serve
 ```
-Once its online, you can go to [http://127.0.0.1:8000]([http://127.0.0.1:8000]) for a live preview as you make changes in the Wiki folder.
+Once its online, you can go to [http://localhost:8000]([http://localhost:8000]) for a live preview as you make changes in the Wiki folder.
