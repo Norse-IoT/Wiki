@@ -1,13 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --body-bg: #1e2129;
+    --code-bg: #272a35;
+    --link: #ffc107;
+    --link-hover: #ffca2c;
+    --text: white;
+    --menu-bg: #212529;
+    --menu-bg-active: #292d3a;
+    --menu-bg-hover: #2f3444;
+    --menu-bg-item: #242534;
+    --button: black;
+}
+
+body {
+    font-family: 'Ubuntu';
+}
 
 .rst-content code, .rst-content tt {
     font-family: 'Fira Code';
-    background-color: #272a35 !important;
+    background-color: var(--code-bg) !important;
     border-color: transparent ;
 }
 
 .highlight, .rst-content pre code {
-    background-color: #272a35 !important;
+    background-color: var(--code-bg) !important;
 
 }
 
@@ -26,31 +43,31 @@
 }
 
 section a:visited, section a, a:visited code, a code {
-   color: #ffc107 !important;
+   color: var(--link) !important;
 }
 section a:hover {
-    color: #ffca2c !important;
+    color: var(--link-hover) !important;
 }
 
-.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a {
-    background-color: #292d3a;
-    color: white;
+.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a, .wy-menu-vertical li.toctree-l2.current>a {
+    background-color: var(--menu-bg-active);
+    color: var(--text);
     border: #1f222b !important;
 }
 
 .wy-menu-vertical a:hover {
-    background-color: #2f3444;
+    background-color: var(--menu-bg-hover);
 
 }
 
-div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
-    background-color: #212529 !important;
+.wy-nav-shift, .wy-nav-side, .wy-side-nav-search, div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    background-color: var(--menu-bg) !important;
 
 }
 
 .toctree-l2 {
-    background-color: #242534 !important;
-    color: white !important;
+    background-color: var(--menu-bg-item) !important;
+    color: var(--text) !important;
 }
 .wy-menu-vertical li.current a:hover {
     background-color: #33365a !important;
@@ -62,12 +79,8 @@ div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-tabl
 
 }
 
-.wy-body-for-navmk, .wy-nav-content, body, .rst-versions  {
-    background-color: #1e2129 !important;
-}
-
-.wy-nav-shift, .wy-nav-side, .wy-side-nav-search {
-    background: #212529 !important;
+.wy-body-for-navmk, .wy-nav-content, body, .rst-versions {
+    background-color: var(--body-bg) !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
@@ -75,7 +88,7 @@ div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-tabl
 }
 
 .rst-content pre code, .wy-body-for-navmk, .wy-nav-content, body, label, .wy-side-nav-search, .rst-versions, th, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
-    color: white !important;
+    color: var(--text) !important;
 }
 
 
@@ -86,7 +99,7 @@ div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-tabl
 }
 
 nav, .rst-versions .rst-current-version {
-    background-color: #212529 !important;
+    background-color: var(--menu-bg) !important;
     box-shadow: 0 0 .2rem #0000001a,0 .2rem .4rem #0003;
 }
 
@@ -94,30 +107,13 @@ nav, .rst-versions .rst-current-version {
     text-transform: uppercase;
 }
 
-.rst-current-version span {
-    margin-left: 15px;
-    margin-right: 20px;
-    padding-right: 5px;
-    padding-left: 5px;
-    background-color: #ffca2c !important;
-    border-radius: 500px;
-    color: black;
-    margin-bottom: 10px;
-
-}
-
-.rst-current-version span a {
-    color: black !important;
-
-}
-
 .wy-side-nav-search .wy-dropdown > a, .wy-side-nav-search > a {
     text-transform:uppercase
 }
 .wy-side-nav-search input[type="text"] {
     background-color: transparent !important;
-    border-color: #ffca2c !important;
-    color: white !important;
+    border-color: var(--link) !important;
+    color: var(--text) !important;
     filter: drop-shadow(0px 0px 50px rgb(65, 65, 65));
 }
 
@@ -161,8 +157,8 @@ nav, .rst-versions .rst-current-version {
     color: #727272 !important;
 }
 #social-block .item:hover, .social.item svg:hover {
-    color: #ffca2c !important;
-    fill: #FFCA2C !important
+    color: var(--link) !important;
+    fill: var(--link) !important
 }
 
 #social-block .social {
@@ -188,4 +184,27 @@ footer {
 
 .flex {
     display: flex;
+}
+
+.wy-side-scroll {
+    height: 96% !important;
+}
+
+
+/* EDIT ON GITHUB BUTTON */
+.rst-current-version span {
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: var(--link) !important;
+    border-radius: 500px;
+    color: var(--button);
+    margin-bottom: 10px;
+
+}
+
+.rst-current-version span a {
+    color: var(--button) !important;
+
 }
