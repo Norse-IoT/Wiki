@@ -43,4 +43,20 @@ You can use the following command to begin previewing your changes.
 ```
 mkdocs serve
 ```
+
+Note: if you're on Windows and the command isn't working, you can use the following command instead.
+```
+python -m mkdocs
+```
+
 Once its online, you can go to [http://localhost:8000]([http://localhost:8000]) for a live preview as you make changes in the Wiki folder.
+
+### Push Changes
+
+After making changes, use the following commands to upload to GitHub.
+
+```
+git add .
+git commit -m "Summary of changes"
+git push
+```
