@@ -26,7 +26,15 @@ After you have configured the setup, click on "Finish" and it should create the 
 
 ![Sample PlatformIO project filesystem on creation](../assets/resources-platformio-project-base-dir.png)
 
+As you can see, a few directories and files were automatically created, including a `platformio.ini` file. This file contains the configurations for your PlatformIO project, and every project will have one.
+
+Inside the project directory, there are 2 main other directories we should know about: `src` and `lib`.
+
+The `src` folder will hold all of the Arduino files that you write. Instead of using .ino files, PlatformIO has standardized the use of .cpp files and added the line `#include <Arduino.h>` to ensure access to the Arduino library.
+
+The `lib` folder will hold every dependency your project has that is not already included in the Arduino suite of built in libraries (as well as every dependency that any other dependency relies on).
+
 ### Change Project Settings
 
-Dependencies for your project, 
+Dependencies for your project can be configured from the PlatformIO home page. Most libraries for basically any functionality you need on ESP32 is available through the PlatformIO library manager/search functionality, which is incredibly useful.
 
