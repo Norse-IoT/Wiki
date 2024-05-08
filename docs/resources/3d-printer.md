@@ -11,12 +11,9 @@ Then, you can reference [the PRUSA documentation](https://help.prusa3d.com/artic
 
 You're going to want the one for the "ORIGINAL PRUSA MK4".
 
-<aside>
-I (Zack Sargent) tested [version 2.7.4](https://cdn.prusa3d.com/downloads/drivers/prusa3d_linux_2_7_4.zip) under "DRIVERS & APPS 2.7.4" on Fedora Linux.
-
-The appimage "`PrusaSlicer-2.7.4+linux-x64-GTK3-202404050928.AppImage`" worked perfectly first time for me.
-
-</aside>
+> I (Zack Sargent) tested [version 2.7.4](https://cdn.prusa3d.com/downloads/drivers/prusa3d_linux_2_7_4.zip) under "DRIVERS & APPS 2.7.4" on Fedora Linux.
+> 
+> The appimage "`PrusaSlicer-2.7.4+linux-x64-GTK3-202404050928.AppImage`" worked perfectly first time for me.
 
 ## Setting up the printer's slicer
 
