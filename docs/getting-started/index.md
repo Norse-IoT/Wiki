@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32
 
 3. Open the Boards Manager by clicking the Boards Manager icon on the sidebar - the icon below the folder icon.
 
-![Screenshot of the Board Manager](assets/getting-started-board-manager.png)
+![Screenshot of the Board Manager](../assets/getting-started-board-manager.png)
 
 4. Search for ESP32, and press the install button for the esp32 by ExpressIf Systems.
 

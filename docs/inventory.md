@@ -6,21 +6,21 @@ This inventory reflects all hardware owned and used by the club.
 | ID          | Description            | Owner                |
 | ----------- | ---------------------- | ----                 |
 | `000`       | Humidity Sensor Reference Model  | Chris Brewer         |
-| `001`       | Free - Breadboardless  | N/A         |
-| `002`       | Free - Breadboardless  | N/A         |
-| `003`       | Free - Breadboardless  | N/A         |
+| `001`       | Free  | N/A         |
+| `002`       | Free  | N/A         |
+| `003`       | Free  | N/A         |
 | `004`       | Free  | N/A         |
-| `005`       | Free - Breadboardless  | N/A         |
-| `006`       | Free - Breadboardless  | N/A         |
-| `007`       | Free - Breadboardless  | N/A         |
-| `008`       | Free - Breadboardless  | N/A         |
-| `009`       | Free - Breadboardless  | N/A         |
-| `010`       | Free - Breadboardless  | N/A         |
-| `011`       | Free - Breadboardless  | N/A         |
-| `012`       | Free - Breadboardless  | N/A         |
-| `013`       | Free - Breadboardless  | N/A         |
-| `014`       | Free - Breadboardless  | N/A         |
-| `015`       | Free - Breadboardless  | N/A         |
+| `005`       | Free  | N/A         |
+| `006`       | Free  | N/A         |
+| `007`       | Free  | N/A         |
+| `008`       | Free  | N/A         |
+| `009`       | Free  | N/A         |
+| `010`       | Free  | N/A         |
+| `011`       | Free  | N/A         |
+| `012`       | Free  | N/A         |
+| `013`       | Free  | N/A         |
+| `014`       | Free  | N/A         |
+| `015`       | Free  | N/A         |
 | `016`       | MIA  | Chris Brewer         |
 | `017`       | Fractal Zoom           | Riley Weber-Horowitz |
 | `018`       | Free                   | N/A                  |
