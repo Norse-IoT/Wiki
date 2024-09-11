@@ -8,8 +8,6 @@ We'll start by installing the [Arduino IDE 2.0](https://www.arduino.cc/en/Tutori
 
 You can [download the IDE from the Arduino website](https://www.arduino.cc/en/software) for your operating system.
 
-![Screenshot of the Arduino website, showing the various download options](../assets/getting-started-download.png)
-
 - **Windows**: Download the version for Win 10 and newer, and run the executable.
 - **Linux**: Download the AppImage, and run the executable.
 > On Fedora Linux 39, Zack had issues with the AppImage. The [IDEv2 flatpak package](https://flathub.org/apps/cc.arduino.IDE2) worked first try.
@@ -17,6 +15,8 @@ You can [download the IDE from the Arduino website](https://www.arduino.cc/en/so
 > On Ubuntu 22.04 LTS, Cassian had no issues with the AppImage.
 - **macOS**: Download the Apple Silicon version for newer Macs, and the Intel version for older Macs. Open the downloaded disk image, and copy the Arduino IDE to your application folder.
 - For Ashok, the normal download had some issues with esp32's `default.csv`, and we used [the Homebrew Cask](https://formulae.brew.sh/cask/arduino-ide) with no issues.
+
+![Screenshot of the Arduino website, showing the various download options](../assets/getting-started-download.png)
 
 If you run into issues, you can find more information in the [Arduino Docs](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/).
 
