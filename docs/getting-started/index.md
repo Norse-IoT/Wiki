@@ -16,6 +16,7 @@ You can [download the IDE from the Arduino website](https://www.arduino.cc/en/so
 > 
 > On Ubuntu 22.04 LTS, Cassian had no issues with the AppImage.
 - **macOS**: Download the Apple Silicon version for newer Macs, and the Intel version for older Macs. Open the downloaded disk image, and copy the Arduino IDE to your application folder.
+- For Ashok, the normal download had some issues with esp32's `default.csv`, and we used [the Homebrew Cask](https://formulae.brew.sh/cask/arduino-ide) with no issues.
 
 If you run into issues, you can find more information in the [Arduino Docs](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/).
 
@@ -88,6 +89,8 @@ Plug the ESP-32 board into your computer, and follow these steps in the Arduino 
 
 ![Screenshot of the upload button in the top left corner.](../assets/getting-started-select-board.png)
 
+Mac users may see "Bluetooth-Incoming-Port Serial Port" by default. This does not mean their ESP-32 is connected. Mac users will want something like `/dev/cu.usbserial-#### Serial Port (USB)`.
+
 2. You'll then be brought to the Other Boards menu. Search for **devkit** and click on the **DOIT ESP32 DEVKIT V1**.
 
 ![Screenshot of the upload button in the top left corner.](../assets/getting-started-other-board.png)
@@ -95,7 +98,7 @@ Plug the ESP-32 board into your computer, and follow these steps in the Arduino 
 3. Copy and paste the following code into the IDE to test the Internal Blink demo.
 
 ```cpp
-int pin = 2;
+int pin = LED_BUILTIN;
 
 void setup() {
   pinMode(pin, OUTPUT);
