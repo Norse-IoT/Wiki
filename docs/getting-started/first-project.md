@@ -26,7 +26,7 @@ Then, you can add this:
 const int pin = LED_BUILTIN;
 
 void setup() {
->  Serial.begin(115200);
++  Serial.begin(115200);
   pinMode(pin, OUTPUT);
 }
 
@@ -34,20 +34,20 @@ bool state = HIGH;
 
 void loop() {
   digitalWrite(pin, state);
-<  state = !state;
-<  delay(1000);
->  Serial.print("The pin state is: ");
->  Serial.println(state);
->
->  String input = Serial.readStringUntil('\n');
->  Serial.print("recieved: ");
->  Serial.println(input);
->
->  if (input.equals("on")) {
->    state = HIGH;
->  } else if (input.equals("off")) {
->    state = LOW;
->  }
+-  state = !state;
+-  delay(1000);
++  Serial.print("The pin state is: ");
++  Serial.println(state);
++
++  String input = Serial.readStringUntil('\n');
++  Serial.print("recieved: ");
++  Serial.println(input);
++
++  if (input.equals("on")) {
++    state = HIGH;
++  } else if (input.equals("off")) {
++    state = LOW;
++  }
 }
 ```
 
