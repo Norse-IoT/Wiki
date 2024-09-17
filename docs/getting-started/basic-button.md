@@ -16,7 +16,7 @@ To Do:
 
 
 ```cpp
-const int button_pin 21;
+const int button_pin = 21;
 const int light_pin = 2;
 
 void setup() {
