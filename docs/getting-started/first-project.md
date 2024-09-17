@@ -20,37 +20,6 @@ void loop() {
 }
 ```
 
-Then, you can add this:
-
-```diff
-const int pin = LED_BUILTIN;
-
-void setup() {
-+  Serial.begin(115200);
-  pinMode(pin, OUTPUT);
-}
-
-bool state = HIGH;
-
-void loop() {
-  digitalWrite(pin, state);
--  state = !state;
--  delay(1000);
-+  Serial.print("The pin state is: ");
-+  Serial.println(state);
-+
-+  String input = Serial.readStringUntil('\n');
-+  Serial.print("recieved: ");
-+  Serial.println(input);
-+
-+  if (input.equals("on")) {
-+    state = HIGH;
-+  } else if (input.equals("off")) {
-+    state = LOW;
-+  }
-}
-```
-
 So, now you should be able to control whether the internal id is on or off.
 
 If you enter "on" into the Serial prompt, it should turn the LED on.
