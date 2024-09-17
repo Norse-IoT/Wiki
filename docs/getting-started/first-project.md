@@ -49,9 +49,6 @@ void loop() {
 >    state = LOW;
 >  }
 }
-
-
-> 
 ```
 
 So, now you should be able to control whether the internal id is on or off.
