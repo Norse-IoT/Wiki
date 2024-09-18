@@ -36,10 +36,14 @@ void setup() {
 bool state = HIGH;
 
 void loop() {
-  digitalWrite(pin, state);
+  digitalWrite(pin, state); 
+
   Serial.print("The pin state is: ");
   Serial.println(state);
 
+  // Serial.readStringUntil pauses for a short 
+  // duration to see if the user has sent any data, but
+  // it does not wait forever like Scanner#nextLine() in Java. 
   String input = Serial.readStringUntil('\n');
   Serial.print("recieved: ");
   Serial.println(input);
