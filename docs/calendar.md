@@ -14,6 +14,6 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 | 2024-11-05 |               |                                        | <https://cglink.me/2vf/r376706> |
 | 2024-11-12 |               |                                        | <https://cglink.me/2vf/r376707> |
 | 2024-11-19 |               |                                        | <https://cglink.me/2vf/r376708> |
-| 2024-10-26 |               |                                        | <https://cglink.me/2vf/r376709> |
+| 2024-11-26 |               |                                        | <https://cglink.me/2vf/r376709> |
 | 2024-12-03 |               |                                        | <https://cglink.me/2vf/r376710> |
 
