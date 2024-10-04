@@ -2,7 +2,7 @@
 
 > This is a _draft_
 
-The printer we have is a Original Prusa MK4
+The printer we used to have was a Original Prusa MK4. We're looking to get it repaired. Zack is loaning an Ender V3 to the club.
 
 ## Nametag Project
 As an example project to practice 3d printing, you can make a nametag at <https://www.nametag-designer.com/>, which will give you a `.stl` file.
