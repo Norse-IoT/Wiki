@@ -14,7 +14,7 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 | 2024-10-29 | Tyler Kobida  | TBD                                    | <https://cglink.me/2vf/r376705> |
 | 2024-11-05 | Uncle Sam     | Election Day                           | <https://cglink.me/2vf/r376706> |
 | 2024-11-12 | Zack Sargent  | Dawson College [Learn](https://englab.dawsoncollege.qc.ca/learn/) and [Robot Lab](https://englab.dawsoncollege.qc.ca/robot/) | <https://cglink.me/2vf/r376707> |
-| 2024-11-19 | Zack Sargent  | Data viz in React?                     | <https://cglink.me/2vf/r376708> |
-| 2024-11-26 |               |                                        | <https://cglink.me/2vf/r376709> |
-| 2024-12-03 |               |                                        | <https://cglink.me/2vf/r376710> |
+| 2024-11-19 | Zack Sargent  | Dawson College [Learn](https://englab.dawsoncollege.qc.ca/learn/) and [Robot Lab](https://englab.dawsoncollege.qc.ca/robot/) | <https://cglink.me/2vf/r376708> |
+| 2024-11-26 | Zack Sargent  |                                        | <https://cglink.me/2vf/r376709> |
+| 2024-12-03 | Zack Sargent  | Inspect & Adapt Workshop               | <https://cglink.me/2vf/r376710> |
 
