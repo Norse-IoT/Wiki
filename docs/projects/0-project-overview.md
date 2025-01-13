@@ -66,15 +66,6 @@ Skills involved:
 
 **Timeline:** This is probaby going to be after February.
 
-## LoRa analysis (Duke Energy)
-
-**Project Lead:** ???
-
-**Description:** Duke Energy wants us to do something with LoRa. 
-The leadership position here would involve partially figuring out what Duke wants us to do.
-
-Completion of this project would likely involve some sort of produced document or data analysis report.
-
 ## Swipe Control
 
 **Project Lead:** ???
@@ -88,13 +79,17 @@ Completion of this project would likely involve some sort of produced document o
 
 ## Worm Farm
 
-**Project Lead:** ???
+**Project Lead:** Toby Carter
 
 **Description:** Using the brains available from <https://openworm.org/>, create a worm farm or something that utilizes simulated brains. That would be cool. <https://github.com/heyseth/worm-sim>
 
+It was so good they made a sequel: https://www.geppetto.org/
+
+**Timeline:** Let's figure this out later in the semester, maybe Worm Midterms???
+
 ## Joseph's $5 Keyboard Project
 
-**Project Lead:** ???
+**Project Lead:** Joseph G.
 
 **Description:** Get a $5 keyboard from Five-Below, and do something with it. Possibly MIDI-based?
 
@@ -106,6 +101,16 @@ Completion of this project would likely involve some sort of produced document o
 
 - Voice automation
 - Cool stuff
+
+## LoRa analysis (Duke Energy)
+
+**Project Lead:** ???
+
+**Description:** Duke Energy wants us to do something with LoRa. 
+The leadership position here would involve partially figuring out what Duke wants us to do.
+
+Completion of this project would likely involve some sort of produced document or data analysis report.
+
 
 ## Throwflame Thermonator robot (Duke Energy)
 
