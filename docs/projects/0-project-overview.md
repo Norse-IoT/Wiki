@@ -33,7 +33,7 @@ Given 500GB of cat videos:
 
 **Project Lead:** Zack Sargent
 
-**Crew:** Aaron M., Sam L., Fenix P., Emery F., Marlowe M.
+**Crew:** Aaron M., Sam L., Fenix P., Emery F., Marlowe M., Toby C.
 
 Everyone wants to learn about everything. 
 
