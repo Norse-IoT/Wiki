@@ -54,7 +54,17 @@ Open questions:
 
 **Project Lead:** Aaron Milner
 
+**Crew:** Sam, Emery, Fenix, Grace, Will, Tyler the Destroyer, Toby
+
 **Description:** Working with [Clovernook](https://clovernook.org/) to create accessible 3D printing in the blind.
+
+Skills involved:
+
+1. Python
+2. 3d printing ([CURA slicer](https://github.com/Ultimaker/Cura))
+3. UI/UX design
+
+**Timeline:** This is probaby going to be after February.
 
 ## LoRa analysis (Duke Energy)
 
