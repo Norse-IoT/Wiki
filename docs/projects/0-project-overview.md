@@ -4,6 +4,10 @@ Here is the list of projects that we are considering in Spring 2025.
 
 We are looking for leadership positions.
 
+
+
+----
+
 ## Cat Feeder
 
 **Project Lead:** Zack Sargent (looking for a new maintence lead)
@@ -13,6 +17,14 @@ We are looking for leadership positions.
 **Description:**
 
 It's a cat feeder outside landrum. It should work frequently, but it doesn't. 😢
+
+### Cat Feeder Video Analysis
+
+Given 500GB of cat videos:
+
+1. find which cats eat the most often?
+2. select only the cat clips?
+3. secret third thing?
 
 ## MQTT Kahoot
 
@@ -65,6 +77,12 @@ Completion of this project would likely involve some sort of produced document o
 
 **Description:** Using the brains available from <https://openworm.org/>, create a worm farm or something that utilizes simulated brains. That would be cool. <https://github.com/heyseth/worm-sim>
 
+## Joseph's $5 Keyboard Project
+
+**Project Lead:** ???
+
+**Description:** Get a $5 keyboard from Five-Below, and do something with it. Possibly MIDI-based?
+
 ## Room Automation
 
 **Project Lead:** ???
@@ -83,14 +101,14 @@ The leadership position here would involve partially figuring out what Duke want
 
 ## Time in Remote Locations (Duke Energy)
 
-**Project Lead:** ?? 
+**Project Lead:** ???
 
 **Description:** Duke Energy wants us to work with figuring out how to get time precisely in remote locations.
 The leadership position here would involve partially figuring out what Duke wants us to do.
 
 ## Do cool things with Flipper Zeros
 
-**Project Lead:** ??
+**Project Lead:** ???
 
 **Description:** One person figures out how to do cool stuff with Flipper Zeros, and then spends time helping other people learn about them.
 
