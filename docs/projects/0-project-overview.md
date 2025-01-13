@@ -10,9 +10,12 @@ We are looking for leadership positions.
 
 ## Cat Feeder
 
-**Project Lead:** Zack Sargent (looking for a new maintence lead)
+**Project Lead:** 
 
-**Crew:** Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter
+1. Aaron Milner
+2. Clove Natale
+
+**Crew:** Zack Sargent, Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter
 
 **Description:**
 
