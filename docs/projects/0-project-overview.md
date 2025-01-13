@@ -1,6 +1,6 @@
 # Projects Overview
 
-Here is the list of projects that we are considering in Spring 2025 
+Here is the list of projects that we are considering in Spring 2025.
 
 We are looking for leadership positions.
 
@@ -26,8 +26,8 @@ An interactive workshop in which:
 
 1. people build 4 buttons
 2. people etch code
-3. people can participate in a Kahoot-style comp
-j.h7mk
+3. people can participate in a Kahoot-style competition
+ 
 Open questions:
 
 1. How do we handle security? How do we ensure people can't overwrite other people's submissions?
@@ -47,6 +47,32 @@ Open questions:
 The leadership position here would involve partially figuring out what Duke wants us to do.
 
 Completion of this project would likely involve some sort of produced document or data analysis report.
+
+## Swipe Control
+
+**Project Lead:** ???
+
+**Description:** Develop the ablility to:
+
+- swipe into a meeting
+- swipe to trigger other things on either
+   - the MQTT network
+   - in the room (via some other method)
+
+## Worm Farm
+
+**Project Lead:** ???
+
+**Description:** Using the brains available from <https://openworm.org/>, create a worm farm or something that utilizes simulated brains. That would be cool. <https://github.com/heyseth/worm-sim>
+
+## Room Automation
+
+**Project Lead:** ???
+
+**Description:** Work on automating the club room with:
+
+- Voice automation
+- Cool stuff
 
 ## Throwflame Thermonator robot (Duke Energy)
 
