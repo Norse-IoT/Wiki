@@ -31,17 +31,19 @@ Given 500GB of cat videos:
 
 ## MQTT Kahoot
 
-**Project Lead:** ???
+**Project Lead:** Zack Sargent
 
-**Crew:** Aaron Milner
+**Crew:** Aaron M., Sam L., Fenix P., Emery F., Marlowe M.
 
-**Description:** 
+Everyone wants to learn about everything. 
+
+**Description:** DUE: Jan 31, Feb 15, March ?
 
 An interactive workshop in which:
 
-1. people build 4 buttons
-2. people etch code
-3. people can participate in a Kahoot-style competition
+1. people build 4 buttons with ESP32 - hardware
+2. people connect to MQTT Server - hosting
+3. people can participate in a Kahoot-style competition - frontend
  
 Open questions:
 
