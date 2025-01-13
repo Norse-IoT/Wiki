@@ -81,6 +81,8 @@ Skills involved:
 
 **Project Lead:** Toby Carter
 
+**Crew:** Malachi N., Grace W., Emery F., Leah J., Aaron M., Zack Sargent., Patrick H.
+
 **Description:** Using the brains available from <https://openworm.org/>, create a worm farm or something that utilizes simulated brains. That would be cool. <https://github.com/heyseth/worm-sim>
 
 It was so good they made a sequel: https://www.geppetto.org/
@@ -91,7 +93,17 @@ It was so good they made a sequel: https://www.geppetto.org/
 
 **Project Lead:** Joseph G.
 
+**Crew:** ???
+
 **Description:** Get a $5 keyboard from Five-Below, and do something with it. Possibly MIDI-based?
+
+## BCI - Brain Computer Interface for Prosthetics
+
+**Project Lead:** Aaron Milner
+
+**Crew:** Zack Sargent (tentative), Malachi, Sam L.
+
+**Description:** This is a personal project about building an arm controlled via BCI.
 
 ## Room Automation
 
@@ -102,6 +114,21 @@ It was so good they made a sequel: https://www.geppetto.org/
 - Voice automation
 - Cool stuff
 
+## Throwflame Thermonator robot (Duke Energy)
+
+**Project Lead:** 
+
+1. Aaron Milner
+2. Emery Frondorf
+
+**Crew:** Brooke, Will, Sam, Clove, Toby, Neale (for art!!), Malachi N.
+
+**Description:** Duke Energy wants us to do something with Throwflame robot. 
+The leadership position here would involve partially figuring out what Duke wants us to do.
+
+Hydrogen sensor strapped to dog
+
+
 ## LoRa analysis (Duke Energy)
 
 **Project Lead:** ???
@@ -110,14 +137,6 @@ It was so good they made a sequel: https://www.geppetto.org/
 The leadership position here would involve partially figuring out what Duke wants us to do.
 
 Completion of this project would likely involve some sort of produced document or data analysis report.
-
-
-## Throwflame Thermonator robot (Duke Energy)
-
-**Project Lead:** ???
-
-**Description:** Duke Energy wants us to do something with Throwflame robot. 
-The leadership position here would involve partially figuring out what Duke wants us to do.
 
 ## Time in Remote Locations (Duke Energy)
 
@@ -128,7 +147,9 @@ The leadership position here would involve partially figuring out what Duke want
 
 ## Do cool things with Flipper Zeros
 
-**Project Lead:** ???
+**Project Lead:** Tyler K.
+
+**Crew:** Zack S., Malachi N., Sam, Neale, Patrick H.  
 
 **Description:** One person figures out how to do cool stuff with Flipper Zeros, and then spends time helping other people learn about them.
 
