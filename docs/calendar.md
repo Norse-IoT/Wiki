@@ -2,6 +2,27 @@
 
 Here is our current plan for the year. If there's a topic you want us to cover, feel free to reach out to club leadership or mention it in [the Discord](https://discord.gg/H5FjtpE3pH).
 
+## Spring 2025
+
+| **Date**   | **Presenter** | **Topic**                              | 
+|------------|---------------|----------------------------------------| 
+| 2024-01-13 | Zack Sargent  | Establish project interest and leads   | 
+| 2024-01-27 |               |                                        |
+| 2024-02-03 |               |                                        |
+| 2024-02-10 |               |                                        |
+| 2024-02-17 |               |                                        |
+| 2024-02-24 |               |                                        |
+| 2024-03-03 |               |                                        |
+| 2024-03-17 |               |                                        |
+| 2024-03-24 |               |                                        |
+| 2024-04-07 |               |                                        |
+| 2024-04-14 |               |                                        |
+| 2024-04-21 |               |                                        |
+| 2024-04-28 |               |                                        |
+
+
+## Fall 2024
+
 | **Date**   | **Presenter** | **Topic**                              | **CampusGroups Link**         |
 |------------|---------------|----------------------------------------|-------------------------------|
 | 2024-09-10 | Steve Hinkel  | Club Kickoff: Robots, Pizza, and Power | <https://cglink.me/2vf/r376696> |
