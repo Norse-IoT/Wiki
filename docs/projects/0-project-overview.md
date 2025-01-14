@@ -12,10 +12,11 @@ We are looking for leadership positions.
 
 **Project Lead:** 
 
+1. Zack Sargent
 1. Aaron Milner
-2. Clove Natale
+1. Clove Natale
 
-**Crew:** Zack Sargent, Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter
+**Crew:** Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter
 
 **Description:**
 
