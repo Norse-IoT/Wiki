@@ -44,11 +44,8 @@ An interactive workshop in which:
 1. people build 4 buttons with ESP32 - hardware
 2. people connect to MQTT Server - hosting
 3. people can participate in a Kahoot-style competition - frontend
- 
-Open questions:
 
-1. How do we handle security? How do we ensure people can't overwrite other people's submissions?
-2. Do we make our own Kahoot? Or do we fork a clone?
+The repository for this is our [Rahoot](https://github.com/Norse-IoT/Rahoot) fork. Code is ready to go, and will be written to the ESP-32s before the presentation, allowing students to focus on wiring up the ESP-32 instead of copying and pasting code.
 
 ## Clovernook Partnership
 
