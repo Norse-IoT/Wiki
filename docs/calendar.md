@@ -8,7 +8,7 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 |------------|---------------|----------------------------------------| 
 | 2024-01-13 | Zack Sargent  | Establish project interest and leads   | 
 | 2024-01-27 | Zack Sargent  | https://github.com/stefmolin/pandas-workshop   |
-| 2024-02-03 |               |                                        |
+| 2024-02-03 | Ken Roth      | Solar Panels                           |
 | 2024-02-10 |               |                                        |
 | 2024-02-17 |               |                                        |
 | 2024-02-24 |               |                                        |
