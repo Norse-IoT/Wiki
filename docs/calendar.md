@@ -9,10 +9,10 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 | 2024-01-13 | Zack Sargent  | Establish project interest and leads   | 
 | 2024-01-27 | Zack Sargent  | https://github.com/stefmolin/pandas-workshop   |
 | 2024-02-03 | Ken Roth      | Solar Panels                           |
-| 2024-02-10 |               |                                        |
-| 2024-02-17 | Aaron, Toby, &amp; Grace  | NFC game                   |
-| 2024-02-24 |               |                                        |
-| 2024-03-03 |               |                                        |
+| 2024-02-10 | Izaac Gomez   | OnShape &amp; 3d modeling              |
+| 2024-02-17 | Zack Sargent  |                                        |
+| 2024-02-24 | Ken Roth      | 3d printing                            |
+| 2024-03-03 | Aaron, Toby, &amp; Grace  | NFC game                   |
 | 2024-03-17 |               |                                        |
 | 2024-03-24 |               |                                        |
 | 2024-04-07 |               |                                        |
