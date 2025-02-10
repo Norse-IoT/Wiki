@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>The Occupancy Project - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "The Occupancy Project";
+        var mkdocs_page_input_path = "projects/occupancy.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../frankencaster/">Frankencaster</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../freezerburn/">Project Freezerburn</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">The Occupancy Project</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#opera-box-sensing-project">Opera Box Sensing Project</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#method-1-detect-how-many-people-pass-through-the-door">Method 1: Detect how many people pass through the door**</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#method-2-detect-when-there-are-any-number-of-humans-in-the-room">Method 2: Detect when there are any number of humans in the room**</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#experimentation-needed">Experimentation Needed:</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics24/">TechOlympics 2024</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">The Occupancy Project</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="the-occupancy-project">The Occupancy Project</h1>
+<h2 id="opera-box-sensing-project">Opera Box Sensing Project</h2>
+<p>Goal: Detect when people are in the opera boxes.</p>
+<h2 id="method-1-detect-how-many-people-pass-through-the-door">Method 1: Detect how many people pass through the door**</h2>
+<p><code></code><strong>Using: Ultrasonic Sensors</strong></p>
+<p><code></code>{MORE DETAILS NEEDED: SEE GEORGE &amp; GABE}</p>
+<h2 id="method-2-detect-when-there-are-any-number-of-humans-in-the-room">Method 2: Detect when there are any number of humans in the room**</h2>
+<ul>
+<li>
+<p><strong>Using: Passive infrared sensors??</strong></p>
+</li>
+<li>
+<p>Normally, there are 3 main types of IR sensors that come up when you Google them:</p>
+<ul>
+<li><em>Active:</em> <a href="https://www.amazon.com/dp/B08DR1W3BK">Active Reflective Obstacle Avoidance</a> (sends IR and reads it back to get distance)</li>
+<li><a href="https://www.amazon.com/dp/B01BU6YBWU">Break Beam Sensor</a> (detects when someone passes through the door)</li>
+</ul>
+</li>
+<li>
+<p><em>Passive:</em> <a href="https://www.amazon.com/dp/B07KZW86YR/">Passive</a><a href="https://www.amazon.com/dp/B07KZW86YR/"> </a><a href="https://www.amazon.com/dp/B07KZW86YR/">IR</a><a href="https://www.amazon.com/dp/B07KZW86YR/"> </a><a href="https://www.amazon.com/dp/B07KZW86YR/">Motion</a><a href="https://www.amazon.com/dp/B07KZW86YR/"> </a><a href="https://www.amazon.com/dp/B07KZW86YR/">Detector</a> - <a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf">Link</a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf"> </a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf">to</a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf"> </a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf">AdaFruit</a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf"> </a><a href="https://cdn-learn.adafruit.com/downloads/pdf/pir-passive-infrared-proximity-motion-sensor.pdf">Datasheet</a></p>
+</li>
+</ul>
+<p>(detects motion by using two IR sensors, and seeing when the readings pass between them)</p>
+<ul>
+<li>
+<p>All of these use basic IR sensors but then add more functionality.</p>
+</li>
+<li>
+<p>So, I don’t believe any of these could just sense how much IR is in a room.</p>
+</li>
+</ul>
+<p>Just the sensor:</p>
+<ul>
+<li>
+<p><a href="https://cdn-learn.adafruit.com/assets/assets/000/010/137/original/pyroelectrics21e.pdf">Pyroelectric Sensors</a></p>
+</li>
+<li>
+<p><a href="https://www.murata.com/en-eu/api/pdfdownloadapi?cate=luInfraredSensors&amp;partno=IRA-E700ST0">IRA-E700ST0</a></p>
+</li>
+<li>
+<p><a href="https://www.mouser.com/datasheet/2/281/s21e-522733.pdf">Mouse Datasheet</a>  </p>
+</li>
+</ul>
+<h2 id="experimentation-needed">Experimentation Needed:</h2>
+<ul>
+<li>
+<p>I would be interested in seeing what would happen if we use the PIR sensor set to very sensitive with “retriggering mode”.</p>
+</li>
+<li>
+<p>Does it reliably detect human presence?</p>
+</li>
+<li>
+<p>Can we tap into the sensors directly?</p>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../freezerburn/" class="btn btn-neutral float-left" title="Project Freezerburn"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../rust-on-esp32/" class="btn btn-neutral float-right" title="Rust on ESP32s">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../freezerburn/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../rust-on-esp32/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
