@@ -20,6 +20,12 @@ We are looking for leadership positions.
 
 [Discuss](https://discord.com/channels/1027698639172288512/1339403230534434938)
 
+## Swipe Access Thing
+
+**Project Lead:** Zack Sargent
+
+[Discuss](https://discord.com/channels/1027698639172288512/1326311855052034089)
+
 ## Cat Feeder
 
 **Project Lead:** 
