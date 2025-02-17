@@ -8,6 +8,18 @@ We are looking for leadership positions.
 
 ----
 
+## Printer Tower
+
+**Project Lead:** Tyler Kobida
+
+[Discuss](https://discord.com/channels/1027698639172288512/1337063637659160761)
+
+## Robot John
+
+**Project Lead:** Izaac Gomez
+
+[Discuss](https://discord.com/channels/1027698639172288512/1339403230534434938)
+
 ## Cat Feeder
 
 **Project Lead:** 
