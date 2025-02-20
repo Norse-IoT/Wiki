@@ -8,9 +8,9 @@ Here is the [presentation](https://docs.google.com/presentation/d/1rqTwmdk6xH_lq
 
 The Internet of Things (IoT) describes the network of physical objects — "things" — that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.
 
-Range from ordinary household objects to sophisticated industrial tools. 
+IoT Devices range from ordinary household objects to sophisticated industrial tools. 
 
-10 billion connected IoT devices today; 22 billion by 2025. (source: Oracle)
+Oracle estimates there will be 10 billion connected IoT devices today; 22 billion by 2025.
 
 ## What are we using?
 
@@ -26,12 +26,18 @@ We're using ESP-32 devices, which strike a good balance between power and cost e
 
 ## The Code
 
-Participants had the code pre-downloaded onto their ESP-32s. If you're looking to follow along at home, you'll need to clone our [Rahoot repo](https://github.com/Norse-IoT/Rahoot), and use Arduino IDE to image your ESP-32 with the [client code](https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient).
+Participants had the code pre-downloaded onto their ESP-32s. If you're looking to follow along at home, you'll need to clone our [Rahoot repo](https://github.com/Norse-IoT/Rahoot), and use Arduino IDE to image your ESP-32 with the [client code](https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient). For more info, try out our [Getting Started](/getting-started) guide.
 
-You'll also need a webserver running Rahoot. Follow the repo's [Getting Started](https://github.com/Norse-IoT/Rahoot/tree/main/client) guide for more information. The Rahoot server receives data over Websockets and displays it on a website.
+You'll also need a webserver running Rahoot. Follow the repo's [Getting Started](https://github.com/Norse-IoT/Rahoot?tab=readme-ov-file#-getting-started) guide for more information. The Rahoot server receives data over Websockets and displays it on a website.
 
 
 ## The Hardware
+
+- 1x [ESP-32](https://www.amazon.com/dp/B0718T232Z/)
+- 1x [Breadboard](https://www.amazon.com/dp/B07LFD4LT6/)
+- 1x [Buzzer](https://www.amazon.com/dp/B07VK1GJ9X)
+- 4x [Button](https://www.amazon.com/dp/B07CMZCQS5)
+- 1x [Jumper Wires](https://www.amazon.com/dp/B01EV70C78)
 
 ### Wires
 
@@ -125,4 +131,4 @@ Now we can wire up power for our buzzer. The ESP-32 provides five volts of power
 
 ### Step 10: Play!
 
-You can now plug in your ESP-32 and it will connect to Wi-Fi and then to the Rahoot server. If you rotate your breadboard so the USB port is facing to the left, you can use the buttons to play Rahoot.
+You can now plug in your ESP-32 to power and it will connect to Wi-Fi and then to the Rahoot server. If you rotate your breadboard so the USB port is facing to the left, you can use the buttons to play Rahoot.
