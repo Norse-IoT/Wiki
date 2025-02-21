@@ -119,7 +119,8 @@ Take the buttons one step at a time. The pins on the buttons are quite delicate,
 
 ### Step 4: Attach Ground Wires
 
-We'll then move on to wiring up ground wires. Ground wires are used to ground our buttons, giving them a baseline reading of zero to read off of.
+We'll then move on to wiring up ground wires. Ground wires are used to ground our buttons, giving them a baseline reading of 
+zero to read off of.
 
 1. Wire from a19 to the left negative rail.
 2. Wire from a22 to the left negative rail.
@@ -130,6 +131,9 @@ We'll then move on to wiring up ground wires. Ground wires are used to ground ou
 
 
 ### Step 5: Attach Buzzer
+
+We'll now go ahead and attach the buzzer. The buzzer has two pins and we'll place the buzzer on slots e22 and f22, 
+straddling the divide between the two sections of breadboard.
 
 <img width=25% src="/assets/to25/step5.avif">
 
