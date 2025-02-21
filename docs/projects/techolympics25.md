@@ -28,7 +28,7 @@ We're using ESP-32 devices, which strike a good balance between power and cost e
 
 Participants had the code pre-downloaded onto their ESP-32s. If you're looking to follow along at home, you'll need to clone our [Rahoot repo](https://github.com/Norse-IoT/Rahoot), and use Arduino IDE to image your ESP-32 with the [client code](https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient). For more info, try out our [Getting Started](/getting-started) guide.
 
-You'll also need a webserver running Rahoot. Follow the repo's [Getting Started](https://github.com/Norse-IoT/Rahoot?tab=readme-ov-file#-getting-started) guide for more information. The Rahoot server receives data over Websockets and displays it on a website.
+You'll also need a webserver running our fork of Rahoot. Follow the repo's [Getting Started](https://github.com/Norse-IoT/Rahoot?tab=readme-ov-file#-getting-started) guide for more information. The Rahoot server receives data over Websockets and displays it on a website.
 
 
 ## The Hardware
@@ -43,11 +43,15 @@ You'll also need a webserver running Rahoot. Follow the repo's [Getting Started]
 
 Wires are used to connect one point to another.
 
+<img width=50% src="/assets/to25/wires.avif">
+
 ### Breadboards
 
 Breadboards allows for easy and adaptable assembly of the microcontroller with input and output devices. Vertical rails, on the left and right sides, connect vertically, and horizontal rails, in the center, connect horizontally.
 
 We'll use one breadboard.
+
+<img width=50% src="/assets/to25/breadboards.avif">
 
 ### Buzzer
 
@@ -56,17 +60,24 @@ Passive buzzers can play tones!
 
 We'll use one buzzer.
 
+<img width=50% src="/assets/to25/buzzer.avif">
+
 ### Button
 
 Buttons are, well, buttons! Pressing them sends a signal that the ESP can read. 
 
 We'll use four buttons.
 
+<img width=50% src="/assets/to25/button.avif">
+
+
 ## The Software
 
 ### Arduino Software
 
 As mentioned, the ESP-32s are running C++ code that reads data from buttons and sends the data over Wi-Fi through Websockets.
+
+<img width=50% src="/assets/to25/arduino.avif">
 
 ### Websockets
 
@@ -75,6 +86,8 @@ Websockets are used in applications like…
 - Discord, to allow real time communication between you and your friends
 - Minecraft server consoles, to get live updates on your server.
 
+<img width=50% src="/assets/to25/websockets.avif">
+
 ## Let's build it!
 
 ### Step 1: Pull out the breadboard
@@ -82,9 +95,14 @@ Websockets are used in applications like…
 
 Go ahead and pull out your breadboard. This will be the base for your project.
 
+<img width=25% src="/assets/to25/step1.avif">
+
+
 ### Step 2: Put on ESP-32
 
 Insert the ESP-32 into the breadboard. The bottom of the ESP-32 (the side with the USB port), should be aligned with row 1, with one corner on column b and the other corner on column i. **Do not force it. There is potential to break a pin.**
+
+<img width=25% src="/assets/to25/step2.avif">
 
 ### Step 3: Put on Buttons
 
@@ -95,6 +113,9 @@ Take the buttons one step at a time. The pins on the buttons are quite delicate,
 3. Insert your third button with the top left corner at f25, bottom left corner at f27, top right corner at i25, and bottom right corner at i27.
 4. Insert your fourth button with the top left corner at f28, bottom left corner at f30, top right corner at i30, and bottom right corner at i30.
 
+<img width=25% src="/assets/to25/step3.avif">
+
+
 ### Step 4: Attach Ground Wires
 
 We'll then move on to wiring up ground wires. Ground wires are used to ground our buttons, giving them a baseline reading of zero to read off of.
@@ -104,7 +125,13 @@ We'll then move on to wiring up ground wires. Ground wires are used to ground ou
 3. Wire from a25 to the left negative rail.
 4. Wire from a30 to the left negative rail.
 
+<img width=25% src="/assets/to25/step4.avif">
+
+
 ### Step 5: Attach Buzzer
+
+<img width=25% src="/assets/to25/step5.avif">
+
 
 ### Step 6: Attach Ground Wires
 
@@ -114,14 +141,32 @@ We have a few more ground wires for the other side.
 2. Wire from j25 to the right negative rail.
 3. Wire from j30 to the right negative rail.
 
-### Step 7-8: Attach Data Wires
+<img width=25% src="/assets/to25/step6.avif">
+
+
+### Step 7: Attach Data Wires
 
 Now we move on to attaching data wires. The ESP-32 will use this to read the data from the buttons.
 
 1. Wire from a18 to a28.
 2. Wire from a17 to a27.
-3. Wire from a13 to a28.
-4. Wire from a12 to a27.
+
+
+<img width=24% src="/assets/to25/step7a.avif">
+<img width=25% src="/assets/to25/step7b.avif">
+
+
+
+### Step 8: Attach Data Wires
+
+Now we move on to attaching data wires. The ESP-32 will use this to read the data from the buttons.
+
+1. Wire from a13 to a28.
+2. Wire from a12 to a27.
+
+<img width=25% src="/assets/to25/step8a.avif">
+<img width=25% src="/assets/to25/step8b.avif">
+<img width=18% src="/assets/to25/step8c.avif">
 
 ### Step 9: Attach Power Wire
 
@@ -129,6 +174,12 @@ Now we can wire up power for our buzzer. The ESP-32 provides five volts of power
 
 1. Wire from a11 to a22.
 
+<img width=25% src="/assets/to25/step9.avif">
+<img width=21% src="/assets/to25/step9a.avif">
+
+
 ### Step 10: Play!
 
 You can now plug in your ESP-32 to power and it will connect to Wi-Fi and then to the Rahoot server. If you rotate your breadboard so the USB port is facing to the left, you can use the buttons to play Rahoot.
+
+<img width=50% src="/assets/to25/step10.avif">
