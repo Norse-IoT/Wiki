@@ -4,19 +4,18 @@ This tutorial covers how to get started developing for the ESP-32 using the Ardu
 
 ## Installing Arduino IDE
 
-We'll start by installing the [Arduino IDE 2.0](https://www.arduino.cc/en/Tutorial/getting-started-with-ide-v2).
+We'll start by installing the [Arduino IDE 2.0](https://www.arduino.cc/en/Tutorial/getting-started/with-ide-v2).
 
 You can [download the IDE from the Arduino website](https://www.arduino.cc/en/software) for your operating system.
 
 - **Windows**: Download the version for Win 10 and newer, and run the executable.
 - **Linux**: Download the AppImage, and run the executable.
-> On Fedora Linux 39, Zack had issues with the AppImage. The [IDEv2 flatpak package](https://flathub.org/apps/cc.arduino.IDE2) worked first try.
-> 
-> On Ubuntu 22.04 LTS, Cassian had no issues with the AppImage.
+    - On Fedora Linux 39, Zack had issues with the AppImage. The [IDEv2 flatpak package](https://flathub.org/apps/cc.arduino.IDE2) worked first try.
+    - On Ubuntu 22.04 LTS, Cassian had no issues with the AppImage.
 - **macOS**: Download the Apple Silicon version for newer Macs, and the Intel version for older Macs. Open the downloaded disk image, and copy the Arduino IDE to your application folder.
-- For Ashok, the normal download had some issues with esp32's `default.csv`, and we used [the Homebrew Cask](https://formulae.brew.sh/cask/arduino-ide) with no issues.
+    - For Ashok, the normal download had some issues with esp32's `default.csv`, and we used [the Homebrew Cask](https://formulae.brew.sh/cask/arduino-ide) with no issues.
 
-![Screenshot of the Arduino website, showing the various download options](../assets/getting-started-download.png)
+![Screenshot of the Arduino website, showing the various download options](../assets/getting-started/download.png)
 
 If you run into issues, you can find more information in the [Arduino Docs](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started/ide-v2-downloading-and-installing/).
 
@@ -32,11 +31,11 @@ The next step is adding ESP-32s to the list of devices Arduino IDE can install t
 https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 ```
 
-![Screenshot of the Arduino IDE, showing the Additional Board Manager URLs textbox.](../assets/getting-started-preferences.png)
+![Screenshot of the Arduino IDE, showing the Additional Board Manager URLs textbox.](../assets/getting-started/preferences.png)
 
 3. Open the Boards Manager by clicking the Boards Manager icon on the sidebar - the icon below the folder icon.
 
-![Screenshot of the Board Manager](../assets/getting-started-board-manager.png)
+![Screenshot of the Board Manager](../assets/getting-started/board-manager.png)
 
 4. Search for ESP32, and press the install button for the esp32 by ExpressIf Systems.
 
@@ -48,16 +47,16 @@ On Windows, Arduino needs an additional driver to write to ESP-32 devices. You c
 
 1. Open the ZIP file, and from there choose to extract the file.
 
-![Screenshot of the downloaded driver ZIP](../assets/getting-started-windows-open.png)
+![Screenshot of the downloaded driver ZIP](../assets/getting-started/windows-open.png)
 
-![Screenshot of the Windows extract menu](../assets/getting-started-windows-extract.png)
+![Screenshot of the Windows extract menu](../assets/getting-started/windows-extract.png)
 
 
 2. Launch **CP210xVCPInstaller_x64.exe** and follow the installation wizard.
 
-![Screenshot of the extracted driver ZIP](../assets/getting-started-windows-open.png)
+![Screenshot of the extracted driver ZIP](../assets/getting-started/windows-open.png)
 
-![Screenshot of the Driver installer](../assets/getting-started-windows-install.png)
+![Screenshot of the Driver installer](../assets/getting-started/windows-install.png)
 
 
 
@@ -87,13 +86,13 @@ Plug the ESP-32 board into your computer, and follow these steps in the Arduino 
 
 1. Click the Select Board dropdown. If you see a board show up, you're on the right track! Click the Unknown board.
 
-![Screenshot of the upload button in the top left corner.](../assets/getting-started-select-board.png)
+![Screenshot of the upload button in the top left corner.](../assets/getting-started/select-board.png)
 
 Mac users may see "Bluetooth-Incoming-Port Serial Port" by default. This does not mean their ESP-32 is connected. Mac users will want something like `/dev/cu.usbserial-#### Serial Port (USB)`.
 
 2. You'll then be brought to the Other Boards menu. Search for **devkit** and click on the **DOIT ESP32 DEVKIT V1**.
 
-![Screenshot of the upload button in the top left corner.](../assets/getting-started-other-board.png)
+![Screenshot of the upload button in the top left corner.](../assets/getting-started/other-board.png)
 
 3. Copy and paste the following code into the IDE to test the Internal Blink demo.
 
@@ -115,7 +114,7 @@ void loop() {
 
 4. Press the **Upload** button in the top left corner. Your code will begin to compile.
 
-![Screenshot of the upload button in the top left corner.](../assets/getting-started-upload.png)
+![Screenshot of the upload button in the top left corner.](../assets/getting-started/upload.png)
 
 5. When you see dots begin to move across the screen in the bottom terminal, press and hold the button to the right of the Micro-USB power connector to accept the new code.
 
