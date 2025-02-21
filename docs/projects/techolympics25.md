@@ -35,9 +35,9 @@ You'll also need a webserver running our fork of Rahoot. Follow the repo's [Gett
 
 - 1x [ESP-32](https://www.amazon.com/dp/B0718T232Z/)
 - 1x [Breadboard](https://www.amazon.com/dp/B07LFD4LT6/)
-- 1x [Buzzer](https://www.amazon.com/dp/B07VK1GJ9X)
+- 1x [Buzzer](https://www.amazon.com/dp/B01NCOXB2Q)
 - 4x [Button](https://www.amazon.com/dp/B07CMZCQS5)
-- 1x [Jumper Wires](https://www.amazon.com/dp/B01EV70C78)
+- 1x [Jumper Wires](https://www.amazon.com/dp/B0BWGZRGYP)
 
 ### Wires
 
