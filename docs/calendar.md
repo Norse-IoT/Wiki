@@ -4,6 +4,12 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 
 ## Spring 2025
 
+Undated Topics:
+- Dr. Tony Tsetse
+- Zack - Ruby on Rails
+- Zack - Rust (Actix Web)
+
+
 | **Date**   | **Presenter** | **Topic**                              | 
 |------------|---------------|----------------------------------------| 
 | 2024-01-13 | Zack Sargent  | Establish project interest and leads   | 
