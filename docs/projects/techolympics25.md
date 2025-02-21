@@ -58,7 +58,7 @@ We'll use one breadboard.
 Passive buzzers can play tones!
 (Active buzzers cannot play tones)
 
-We'll use one buzzer.
+We'll use one passive buzzer.
 
 <img width=50% src="/assets/to25/buzzer.avif">
 
@@ -83,6 +83,7 @@ As mentioned, the ESP-32s are running C++ code that reads data from buttons and 
 
 Websockets are an API that allows for a client and server to maintain constant communication.
 Websockets are used in applications like…
+
 - Discord, to allow real time communication between you and your friends
 - Minecraft server consoles, to get live updates on your server.
 
