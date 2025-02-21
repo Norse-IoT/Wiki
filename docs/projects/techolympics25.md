@@ -26,7 +26,18 @@ We're using ESP-32 devices, which strike a good balance between power and cost e
 
 ## The Code
 
-Participants had the code pre-downloaded onto their ESP-32s. If you're looking to follow along at home, you'll need to clone our [Rahoot repo](https://github.com/Norse-IoT/Rahoot), and use Arduino IDE to image your ESP-32 with the [client code](https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient). For more info, try out our [Getting Started](/getting-started) guide.
+Participants had the code pre-downloaded onto their ESP-32s. 
+If you're looking to follow along at home, you'll need to clone our [Rahoot repo](https://github.com/Norse-IoT/Rahoot), 
+and use Arduino IDE to image your ESP-32 with the [client code](https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient). 
+For more info, try out our [Getting Started](/getting-started) guide.
+
+You'll also need to add a `secrets.h` file to the same folder as the rest of your ESP-32 code. 
+The content of that file should be the following,
+with your Wi-Fi details substituted for the dummy passwords shown here:
+```c
+const char* SSID = "YOURROUTERNAMEHERE";
+const char* WIFI_PASSWORD = "YOURROUTERPASSWORDHERE";
+```
 
 You'll also need a webserver running our fork of Rahoot. Follow the repo's [Getting Started](https://github.com/Norse-IoT/Rahoot?tab=readme-ov-file#-getting-started) guide for more information. The Rahoot server receives data over Websockets and displays it on a website.
 
