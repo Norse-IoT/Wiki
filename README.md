@@ -13,6 +13,8 @@ A brief version of the local (advanced) wiki editing guide is available below.
 - Python
 - Git
 
+### Installation Steps
+
 ```bash
 git clone https://github.com/Norse-IoT/Wiki.git # clone the wiki
 cd Wiki # Enter the Wiki folder
