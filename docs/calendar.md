@@ -5,9 +5,9 @@ Here is our current plan for the year. If there's a topic you want us to cover, 
 ## Spring 2025
 
 Undated Topics:
+
 - Dr. Tony Tsetse
-- Zack - Ruby on Rails
-- Zack - Rust (Actix Web)
+- Zack - Rust 
 
 
 | **Date**   | **Presenter** | **Topic**                              | 
