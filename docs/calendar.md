@@ -19,7 +19,7 @@ Undated Topics:
 | 2024-02-17 | Zack Sargent  | MicroPython                            |
 | 2024-02-24 | Ken Roth      | 3d printing                            |
 | 2024-03-03 | Aaron, Toby, &amp; Grace  | NFC game                   |
-| 2024-03-17 | Zack Sargent  | Ruby on Rails\n *E-Board Candidates Open* |
+| 2024-03-17 | Zack Sargent  | Ruby on Rails <br> *E-Board Candidates Open* |
 | 2024-03-24 |               | *E-Board Candidates Open*              |
 | 2024-04-07 |               | *E-Board Election (Nominations Open)*  |
 | 2024-04-14 |               |                                        |
