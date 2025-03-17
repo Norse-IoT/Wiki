@@ -146,7 +146,7 @@ Hydrogen sensor strapped to dog
 
 ## LoRa analysis (Duke Energy)
 
-**Project Lead:** ???
+**Project Lead:** Tyler Kobida
 
 **Description:** Duke Energy wants us to do something with LoRa. 
 The leadership position here would involve partially figuring out what Duke wants us to do.
