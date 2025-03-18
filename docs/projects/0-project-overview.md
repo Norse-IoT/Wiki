@@ -20,20 +20,14 @@ We are looking for leadership positions.
 
 [Discuss](https://discord.com/channels/1027698639172288512/1339403230534434938)
 
-## Swipe Access Thing
-
-**Project Lead:** Zack Sargent
-
-[Discuss](https://discord.com/channels/1027698639172288512/1326311855052034089)
-
 ## Cat Feeder
 
 **Project Lead:** 
 
-1. Marlowe Munoz
+1. Izaac Gomez
 1. Clove Natale
 
-**Crew:** Zack Sargent, Aaron Milner, Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter
+**Crew:** Zack Sargent, Aaron Milner, Patrick Hirsch, Grace Wu, Tyler Kobida, Toby Carter, Marlowe Munoz
 
 **Description:**
 
@@ -47,7 +41,7 @@ Given 500GB of cat videos:
 2. select only the cat clips?
 3. secret third thing?
 
-## MQTT Kahoot
+## WebSocket Kahoot
 
 **Project Lead:** Zack Sargent
 
@@ -60,26 +54,10 @@ Everyone wants to learn about everything.
 An interactive workshop in which:
 
 1. people build 4 buttons with ESP32 - hardware
-2. people connect to MQTT Server - hosting
+2. people connect to WebSocket Server - hosting
 3. people can participate in a Kahoot-style competition - frontend
 
 The repository for this is our [Rahoot](https://github.com/Norse-IoT/Rahoot) fork. Code is ready to go, and will be written to the ESP-32s before the presentation, allowing students to focus on wiring up the ESP-32 instead of copying and pasting code.
-
-## Clovernook Partnership
-
-**Project Lead:** Aaron Milner
-
-**Crew:** Sam, Emery, Fenix, Grace, Will, Tyler the Destroyer, Toby
-
-**Description:** Working with [Clovernook](https://clovernook.org/) to create accessible 3D printing in the blind.
-
-Skills involved:
-
-1. Python
-2. 3d printing ([CURA slicer](https://github.com/Ultimaker/Cura))
-3. UI/UX design
-
-**Timeline:** This is probaby going to be after February.
 
 ## Swipe Control
 
