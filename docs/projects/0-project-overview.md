@@ -133,7 +133,7 @@ Completion of this project would likely involve some sort of produced document o
 
 ## Time in Remote Locations (Duke Energy)
 
-**Project Lead:** ???
+**Project Lead:** Zack is doing this with his group for Raspberry Pi IoT
 
 **Description:** Duke Energy wants us to work with figuring out how to get time precisely in remote locations.
 The leadership position here would involve partially figuring out what Duke wants us to do.
