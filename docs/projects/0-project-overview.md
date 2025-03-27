@@ -59,17 +59,6 @@ An interactive workshop in which:
 
 The repository for this is our [Rahoot](https://github.com/Norse-IoT/Rahoot) fork. Code is ready to go, and will be written to the ESP-32s before the presentation, allowing students to focus on wiring up the ESP-32 instead of copying and pasting code.
 
-## Swipe Control
-
-**Project Lead:** ???
-
-**Description:** Develop the ablility to:
-
-- swipe into a meeting
-- swipe to trigger other things on either
-   - the MQTT network
-   - in the room (via some other method)
-
 ## Worm Farm
 
 **Project Lead:** Toby Carter
