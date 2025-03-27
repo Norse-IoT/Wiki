@@ -4,6 +4,8 @@ This guide is a writeup of the the "Norse IoT Websocket Workshop" session at Tec
 
 Here is the [presentation](https://docs.google.com/presentation/d/1rqTwmdk6xH_lqwWt_yxc8ZMDEDefVV2FJRK6BXMFeCU/edit#slide=id.g330fa5e991b_0_15) for the session. These docs go over the same content as the slide deck.
 
+This session fits in a 60 to 90 minute time slot.
+
 Here's the pitch:
 
 > Are you interested in building your very own smart device? This session allows you to learn how to build your very own Wi-Fi enabled game controller, and even play Kahoot with it! You'll be able to get hands on with real Internet of Things technologies, including ESP-32 (like Arduino) microcontrollers. This session will focus on wiring the devices, and no prior coding or electronics experience is required, members from the Norse IoT Club at Northern Kentucky University will be there to walk you through every part of the process.
