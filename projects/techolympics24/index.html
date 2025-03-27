@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>TechOlympics 2024 - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TechOlympics 2024";
+        var mkdocs_page_input_path = "projects/techolympics24.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-03-17/">2024-03-17 - Ruby on Rails</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2025-02-17/">2025-02-17 - Let's learn MicroPython</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">TechOlympics 2024</a>
+    <ul class="current">
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics25/">TechOlympics 2025</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">TechOlympics 2024</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="techolympics-2024">TechOlympics 2024</h1>
+<p>This guide is designed to assist students with the "Building the Connected Future with IoT" session at TechOlympics 2024.</p>
+<p>Here is the <a href="https://docs.google.com/presentation/d/1B0s1GWxGJs90X0qqKkggmbycxGw6E46TyPBw5wbtO-Q/edit?usp=sharing">presentation</a> for the session.</p>
+<p>This is the code for the Internal LED Blink test. Use this code first to ensure that a stable connection exists.
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>int pin = 2;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>void setup() {
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  pinMode(pin, OUTPUT);
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>}
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>bool state = HIGH;
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>void loop() {
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  digitalWrite(pin, state);
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  state = !state;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  delay(1000);
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>}
+</code></pre></div>
+<strong>STEP 1: Library Pull</strong></p>
+<p>This section of the code will instruct the ESP32 on what libraries it should pull information from. After including the libraries, the code instructs the board on how to connect to our Norse IoT WiFi server.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>#define SERIAL_BAUD    115200
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>#include &lt;DHTesp.h&gt;
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>#include &lt;WiFi.h&gt;
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>#include &lt;ThingsBoard.h&gt;
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>#define DHTTYPE    DHT22 // DHT11, DHT22, DHT21
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>#define DHT_PIN    4
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>#define TOKEN     &quot;21asd7&quot;
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>#define THINGSBOARD_SERVER  &quot;10.0.1.2&quot; 
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>#define WIFI_AP_NAME        &quot;&quot;
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>#define WIFI_PASSWORD       &quot;&quot;
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>WiFiClient espClient;
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>ThingsBoard tb(espClient);
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>int status = WL_IDLE_STATUS;
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>DHTesp dht;
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>int quant = 20;
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>int send_delay = 2000;
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>int send_passed = 0;
+</code></pre></div>
+<p><strong>STEP 2: Connecting to the Web</strong></p>
+<p>This step continues the process of connecting the board to the WiFi.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>void setup() {
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  Serial.begin(SERIAL_BAUD);
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  pinMode(LED_BUILTIN, OUTPUT);
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  InitWiFi();
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  dht.setup(DHT_PIN, DHTesp::DHTTYPE);
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>}
+</code></pre></div>
+<p><strong>STEP 3: Integrating the Server</strong></p>
+<p>In this section, the ESP32 is connected to our server/WiFi. If the board fails to connect, the serial port will display "Failed!"</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>void loop() {  
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>delay(quant);
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  send_passed += quant;
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  if (WiFi.status() != WL_CONNECTED) {
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    InitWiFi();
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    return;
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  }
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a> if (!tb.connected()) {
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    Serial.print(&quot;Connecting to &quot;);
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>    Serial.print(THINGSBOARD_SERVER);
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>    Serial.print(&quot; with token &quot;);
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    Serial.println(TOKEN);
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    if (!tb.connect(THINGSBOARD_SERVER, TOKEN)) {
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>      Serial.println(&quot;Failed!&quot;);
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>      return;
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>    }
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  }
+</code></pre></div>
+<p><strong>STEP 4: Measure and Report Humidity Data</strong>
+First, we check how long it has been since the measurements have last been updated.
+If it has been long enough, we update the measurements by getting the Temp and Humidity from the ESP32.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>  if (send_passed &gt; send_delay) {
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    Serial.print(&quot;Sending data &quot;);
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    TempAndHumidity measurements = dht.getTempAndHumidity(); 
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>if (isnan(measurements.humidity) || isnan(measurements.temperature)) {
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>      Serial.println(&quot;**Failed to read DHT sensor!**&quot;);
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    } else {
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>      tb.sendTelemetryFloat(&quot;temperature&quot;, measurements.temperature);
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>      tb.sendTelemetryFloat(&quot;humidity&quot;, measurements.humidity);
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>      Serial.print(measurements.temperature);
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>      Serial.print(&quot;c / &quot;);
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>      Serial.print(measurements.humidity);
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>      Serial.println(&quot;%).&quot;);
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>      blinkLED(1,250,0);
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>    }
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    send_passed = 0;
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>  }
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>  tb.loop();
+</code></pre></div>
+<p><strong>STEP 5: Ensuring a Stable Connection</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>void InitWiFi()
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>{
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  Serial.println(&quot;&quot;);
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  Serial.print(&quot;Connecting to AP as &quot;);
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  Serial.print(WiFi.macAddress());
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  while (WiFi.status() != WL_CONNECTED) {
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>    delay(500);
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>    Serial.print(&quot;.&quot;);
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  }
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>  blinkLED(3,120,120);
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  Serial.println(&quot;&quot;);
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>  Serial.print(&quot;Connected to AP with IP address &quot;);
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>  Serial.println(WiFi.localIP());
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>}
+</code></pre></div>
+<p><strong>STEP 6: Finalize with LED</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>void blinkLED(int numberOfFlashes, int durationOn, int durationOff) {
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  for(int i = 0; i &lt; numberOfFlashes; i++){
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    digitalWrite(LED_BUILTIN, HIGH);
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>    delay(durationOn);
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    digitalWrite(LED_BUILTIN, LOW);
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>    delay(durationOff);
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  }
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>}
+</code></pre></div>
+<p>The final expected code will be published here ↓</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>#define SERIAL_BAUD    115200
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>#include &lt;DHTesp.h&gt;
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>#include &lt;WiFi.h&gt;
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>#include &lt;ThingsBoard.h&gt;
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>#define DHTTYPE    DHT22 // DHT11, DHT22, DHT21
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>#define DHT_PIN    4
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>#define TOKEN     &quot;21asd7&quot;
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>#define THINGSBOARD_SERVER  &quot;10.0.1.2&quot; 
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>#define WIFI_AP_NAME        &quot;&quot;
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>#define WIFI_PASSWORD       &quot;&quot;
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>WiFiClient espClient;
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>ThingsBoard tb(espClient);
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>int status = WL_IDLE_STATUS;
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>DHTesp dht;
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>int quant = 20;
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>int send_delay = 2000;
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>int send_passed = 0;
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>void setup() {
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>  Serial.begin(SERIAL_BAUD);
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>  pinMode(LED_BUILTIN, OUTPUT);
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a>  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>  InitWiFi();
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>  dht.setup(DHT_PIN, DHTesp::DHTTYPE);
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a>}
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a>void loop() {
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a>  delay(quant);
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a>  send_passed += quant;
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a>
+<a id="__codelineno-7-43" name="__codelineno-7-43" href="#__codelineno-7-43"></a>  if (WiFi.status() != WL_CONNECTED) {
+<a id="__codelineno-7-44" name="__codelineno-7-44" href="#__codelineno-7-44"></a>    InitWiFi();
+<a id="__codelineno-7-45" name="__codelineno-7-45" href="#__codelineno-7-45"></a>    return;
+<a id="__codelineno-7-46" name="__codelineno-7-46" href="#__codelineno-7-46"></a>  }
+<a id="__codelineno-7-47" name="__codelineno-7-47" href="#__codelineno-7-47"></a>
+<a id="__codelineno-7-48" name="__codelineno-7-48" href="#__codelineno-7-48"></a>  if (!tb.connected()) {
+<a id="__codelineno-7-49" name="__codelineno-7-49" href="#__codelineno-7-49"></a>    Serial.print(&quot;Connecting to &quot;);
+<a id="__codelineno-7-50" name="__codelineno-7-50" href="#__codelineno-7-50"></a>    Serial.print(THINGSBOARD_SERVER);
+<a id="__codelineno-7-51" name="__codelineno-7-51" href="#__codelineno-7-51"></a>    Serial.print(&quot; with token &quot;);
+<a id="__codelineno-7-52" name="__codelineno-7-52" href="#__codelineno-7-52"></a>    Serial.println(TOKEN);
+<a id="__codelineno-7-53" name="__codelineno-7-53" href="#__codelineno-7-53"></a>    if (!tb.connect(THINGSBOARD_SERVER, TOKEN)) {
+<a id="__codelineno-7-54" name="__codelineno-7-54" href="#__codelineno-7-54"></a>      Serial.println(&quot;Failed!&quot;);
+<a id="__codelineno-7-55" name="__codelineno-7-55" href="#__codelineno-7-55"></a>      return;
+<a id="__codelineno-7-56" name="__codelineno-7-56" href="#__codelineno-7-56"></a>    }
+<a id="__codelineno-7-57" name="__codelineno-7-57" href="#__codelineno-7-57"></a>  }
+<a id="__codelineno-7-58" name="__codelineno-7-58" href="#__codelineno-7-58"></a>
+<a id="__codelineno-7-59" name="__codelineno-7-59" href="#__codelineno-7-59"></a>  if (send_passed &gt; send_delay) {
+<a id="__codelineno-7-60" name="__codelineno-7-60" href="#__codelineno-7-60"></a>    Serial.print(&quot;Sending data &quot;);
+<a id="__codelineno-7-61" name="__codelineno-7-61" href="#__codelineno-7-61"></a>
+<a id="__codelineno-7-62" name="__codelineno-7-62" href="#__codelineno-7-62"></a>
+<a id="__codelineno-7-63" name="__codelineno-7-63" href="#__codelineno-7-63"></a>    TempAndHumidity measurements = dht.getTempAndHumidity();    
+<a id="__codelineno-7-64" name="__codelineno-7-64" href="#__codelineno-7-64"></a>
+<a id="__codelineno-7-65" name="__codelineno-7-65" href="#__codelineno-7-65"></a>    if (isnan(measurements.humidity) || isnan(measurements.temperature)) {
+<a id="__codelineno-7-66" name="__codelineno-7-66" href="#__codelineno-7-66"></a>      Serial.println(&quot;**Failed to read DHT sensor!**&quot;);
+<a id="__codelineno-7-67" name="__codelineno-7-67" href="#__codelineno-7-67"></a>    } else {
+<a id="__codelineno-7-68" name="__codelineno-7-68" href="#__codelineno-7-68"></a>      tb.sendTelemetryFloat(&quot;temperature&quot;, measurements.temperature);
+<a id="__codelineno-7-69" name="__codelineno-7-69" href="#__codelineno-7-69"></a>      tb.sendTelemetryFloat(&quot;humidity&quot;, measurements.humidity);
+<a id="__codelineno-7-70" name="__codelineno-7-70" href="#__codelineno-7-70"></a>      Serial.print(measurements.temperature);
+<a id="__codelineno-7-71" name="__codelineno-7-71" href="#__codelineno-7-71"></a>      Serial.print(&quot;c / &quot;);
+<a id="__codelineno-7-72" name="__codelineno-7-72" href="#__codelineno-7-72"></a>      Serial.print(measurements.humidity);
+<a id="__codelineno-7-73" name="__codelineno-7-73" href="#__codelineno-7-73"></a>      Serial.println(&quot;%).&quot;);
+<a id="__codelineno-7-74" name="__codelineno-7-74" href="#__codelineno-7-74"></a>      blinkLED(1,250,0);
+<a id="__codelineno-7-75" name="__codelineno-7-75" href="#__codelineno-7-75"></a>    }
+<a id="__codelineno-7-76" name="__codelineno-7-76" href="#__codelineno-7-76"></a>
+<a id="__codelineno-7-77" name="__codelineno-7-77" href="#__codelineno-7-77"></a>    send_passed = 0;
+<a id="__codelineno-7-78" name="__codelineno-7-78" href="#__codelineno-7-78"></a>  }
+<a id="__codelineno-7-79" name="__codelineno-7-79" href="#__codelineno-7-79"></a>
+<a id="__codelineno-7-80" name="__codelineno-7-80" href="#__codelineno-7-80"></a>  tb.loop();
+<a id="__codelineno-7-81" name="__codelineno-7-81" href="#__codelineno-7-81"></a>}
+<a id="__codelineno-7-82" name="__codelineno-7-82" href="#__codelineno-7-82"></a>
+<a id="__codelineno-7-83" name="__codelineno-7-83" href="#__codelineno-7-83"></a>void InitWiFi()
+<a id="__codelineno-7-84" name="__codelineno-7-84" href="#__codelineno-7-84"></a>{
+<a id="__codelineno-7-85" name="__codelineno-7-85" href="#__codelineno-7-85"></a>  Serial.println(&quot;&quot;);
+<a id="__codelineno-7-86" name="__codelineno-7-86" href="#__codelineno-7-86"></a>  Serial.print(&quot;Connecting to AP as &quot;);
+<a id="__codelineno-7-87" name="__codelineno-7-87" href="#__codelineno-7-87"></a>  Serial.print(WiFi.macAddress());
+<a id="__codelineno-7-88" name="__codelineno-7-88" href="#__codelineno-7-88"></a>
+<a id="__codelineno-7-89" name="__codelineno-7-89" href="#__codelineno-7-89"></a>  WiFi.begin(WIFI_AP_NAME, WIFI_PASSWORD);
+<a id="__codelineno-7-90" name="__codelineno-7-90" href="#__codelineno-7-90"></a>  while (WiFi.status() != WL_CONNECTED) {
+<a id="__codelineno-7-91" name="__codelineno-7-91" href="#__codelineno-7-91"></a>    delay(500);
+<a id="__codelineno-7-92" name="__codelineno-7-92" href="#__codelineno-7-92"></a>    Serial.print(&quot;.&quot;);
+<a id="__codelineno-7-93" name="__codelineno-7-93" href="#__codelineno-7-93"></a>  }
+<a id="__codelineno-7-94" name="__codelineno-7-94" href="#__codelineno-7-94"></a>
+<a id="__codelineno-7-95" name="__codelineno-7-95" href="#__codelineno-7-95"></a>  blinkLED(3,120,120);
+<a id="__codelineno-7-96" name="__codelineno-7-96" href="#__codelineno-7-96"></a>
+<a id="__codelineno-7-97" name="__codelineno-7-97" href="#__codelineno-7-97"></a>  Serial.println(&quot;&quot;);
+<a id="__codelineno-7-98" name="__codelineno-7-98" href="#__codelineno-7-98"></a>  Serial.print(&quot;Connected to AP with IP address &quot;);
+<a id="__codelineno-7-99" name="__codelineno-7-99" href="#__codelineno-7-99"></a>  Serial.println(WiFi.localIP());
+<a id="__codelineno-7-100" name="__codelineno-7-100" href="#__codelineno-7-100"></a>}
+<a id="__codelineno-7-101" name="__codelineno-7-101" href="#__codelineno-7-101"></a>
+<a id="__codelineno-7-102" name="__codelineno-7-102" href="#__codelineno-7-102"></a>void blinkLED(int numberOfFlashes, int durationOn, int durationOff) {
+<a id="__codelineno-7-103" name="__codelineno-7-103" href="#__codelineno-7-103"></a>  for(int i = 0; i &lt; numberOfFlashes; i++){
+<a id="__codelineno-7-104" name="__codelineno-7-104" href="#__codelineno-7-104"></a>    digitalWrite(LED_BUILTIN, HIGH);
+<a id="__codelineno-7-105" name="__codelineno-7-105" href="#__codelineno-7-105"></a>    delay(durationOn);
+<a id="__codelineno-7-106" name="__codelineno-7-106" href="#__codelineno-7-106"></a>    digitalWrite(LED_BUILTIN, LOW);
+<a id="__codelineno-7-107" name="__codelineno-7-107" href="#__codelineno-7-107"></a>    delay(durationOff);
+<a id="__codelineno-7-108" name="__codelineno-7-108" href="#__codelineno-7-108"></a>  }
+<a id="__codelineno-7-109" name="__codelineno-7-109" href="#__codelineno-7-109"></a>}
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../rust-on-esp32/" class="btn btn-neutral float-left" title="Rust on ESP32s"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../techolympics25/" class="btn btn-neutral float-right" title="TechOlympics 2025">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../rust-on-esp32/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../techolympics25/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

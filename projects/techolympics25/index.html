@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>TechOlympics 2025 - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "TechOlympics 2025";
+        var mkdocs_page_input_path = "projects/techolympics25.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-03-17/">2024-03-17 - Ruby on Rails</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2025-02-17/">2025-02-17 - Let's learn MicroPython</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics24/">TechOlympics 2024</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">TechOlympics 2025</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#so-what-is-iot">So, what is IoT?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-are-we-using">What are we using?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-are-we-building">What are we building?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-code">The Code</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-hardware">The Hardware</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#wires">Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#breadboards">Breadboards</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#buzzer">Buzzer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#button">Button</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#the-software">The Software</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#arduino-software">Arduino Software</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#websockets">Websockets</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lets-build-it">Let's build it!</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-pull-out-the-breadboard">Step 1: Pull out the breadboard</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-put-on-esp-32">Step 2: Put on ESP-32</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-put-on-buttons">Step 3: Put on Buttons</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-attach-ground-wires">Step 4: Attach Ground Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-attach-buzzer">Step 5: Attach Buzzer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-6-attach-ground-wires">Step 6: Attach Ground Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-7-attach-data-wires">Step 7: Attach Data Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-8-attach-data-wires">Step 8: Attach Data Wires</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-9-attach-power-wire">Step 9: Attach Power Wire</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-10-play">Step 10: Play!</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">TechOlympics 2025</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="techolympics-2025">TechOlympics 2025</h1>
+<p>This guide is a writeup of the the "Norse IoT Websocket Workshop" session at TechOlympics 2025.</p>
+<p>Here is the <a href="https://docs.google.com/presentation/d/1rqTwmdk6xH_lqwWt_yxc8ZMDEDefVV2FJRK6BXMFeCU/edit#slide=id.g330fa5e991b_0_15">presentation</a> for the session. These docs go over the same content as the slide deck.</p>
+<p>This session fits in a 60 to 90 minute time slot.</p>
+<p>Here's the pitch:</p>
+<blockquote>
+<p>Are you interested in building your very own smart device? This session allows you to learn how to build your very own Wi-Fi enabled game controller, and even play Kahoot with it! You'll be able to get hands on with real Internet of Things technologies, including ESP-32 (like Arduino) microcontrollers. This session will focus on wiring the devices, and no prior coding or electronics experience is required, members from the Norse IoT Club at Northern Kentucky University will be there to walk you through every part of the process.</p>
+</blockquote>
+<h2 id="so-what-is-iot">So, what is IoT?</h2>
+<p>The Internet of Things (IoT) describes the network of physical objects — "things" — that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.</p>
+<p>IoT Devices range from ordinary household objects to sophisticated industrial tools. </p>
+<p>Oracle estimates there will be 10 billion connected IoT devices today; 22 billion by 2025.</p>
+<h2 id="what-are-we-using">What are we using?</h2>
+<p>We're using ESP-32 devices, which strike a good balance between power and cost effiency. ESP-32s are a powerful, lightweight chip, anda re useful for many scenarios. They're Wi-Fi/Bluetooth/Matter enabled allowing for various projects.</p>
+<h2 id="what-are-we-building">What are we building?</h2>
+<ul>
+<li>A Wi-Fi Enabled Game Controller</li>
+<li>Will feature four buttons to send responses and a buzzer to communicate right/wrong.</li>
+<li>Will send data to an open-source Kahoot clone through Websockets.</li>
+<li>Will receive data (correct/incorrect) and make a noise.</li>
+</ul>
+<h2 id="the-code">The Code</h2>
+<p>Participants had the code pre-downloaded onto their ESP-32s. 
+If you're looking to follow along at home, you'll need to clone our <a href="https://github.com/Norse-IoT/Rahoot">Rahoot repo</a>, 
+and use Arduino IDE to image your ESP-32 with the <a href="https://github.com/Norse-IoT/Rahoot/tree/main/client/KahootClient">client code</a>. 
+For more info, try out our <a href="/getting-started">Getting Started</a> guide.</p>
+<p>You'll also need to add a <code>secrets.h</code> file to the same folder as the rest of your ESP-32 code. 
+The content of that file should be the following,
+with your Wi-Fi details substituted for the dummy passwords shown here:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">SSID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;YOURROUTERNAMEHERE&quot;</span><span class="p">;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">WIFI_PASSWORD</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;YOURROUTERPASSWORDHERE&quot;</span><span class="p">;</span>
+</code></pre></div></p>
+<p>You'll also need a webserver running our fork of Rahoot. Follow the repo's <a href="https://github.com/Norse-IoT/Rahoot?tab=readme-ov-file#-getting-started">Getting Started</a> guide for more information. The Rahoot server receives data over Websockets and displays it on a website.</p>
+<h2 id="the-hardware">The Hardware</h2>
+<ul>
+<li>1x <a href="https://www.amazon.com/dp/B0718T232Z/">ESP-32</a></li>
+<li>1x <a href="https://www.amazon.com/dp/B07LFD4LT6/">Breadboard</a></li>
+<li>1x <a href="https://www.amazon.com/dp/B01NCOXB2Q">Buzzer</a></li>
+<li>4x <a href="https://www.amazon.com/dp/B07CMZCQS5">Button</a></li>
+<li>1x <a href="https://www.amazon.com/dp/B0BWGZRGYP">Jumper Wires</a></li>
+</ul>
+<h3 id="wires">Wires</h3>
+<p>Wires are used to connect one point to another.</p>
+<p><img width=50% src="/assets/to25/wires.avif"></p>
+<h3 id="breadboards">Breadboards</h3>
+<p>Breadboards allows for easy and adaptable assembly of the microcontroller with input and output devices. Vertical rails, on the left and right sides, connect vertically, and horizontal rails, in the center, connect horizontally.</p>
+<p>We'll use one breadboard.</p>
+<p><img width=50% src="/assets/to25/breadboards.avif"></p>
+<h3 id="buzzer">Buzzer</h3>
+<p>Passive buzzers can play tones!
+(Active buzzers cannot play tones)</p>
+<p>We'll use one passive buzzer.</p>
+<p><img width=50% src="/assets/to25/buzzer.avif"></p>
+<h3 id="button">Button</h3>
+<p>Buttons are, well, buttons! Pressing them sends a signal that the ESP can read. </p>
+<p>We'll use four buttons.</p>
+<p><img width=50% src="/assets/to25/button.avif"></p>
+<h2 id="the-software">The Software</h2>
+<h3 id="arduino-software">Arduino Software</h3>
+<p>As mentioned, the ESP-32s are running C++ code that reads data from buttons and sends the data over Wi-Fi through Websockets.</p>
+<p><img width=50% src="/assets/to25/arduino.avif"></p>
+<h3 id="websockets">Websockets</h3>
+<p>Websockets are an API that allows for a client and server to maintain constant communication.
+Websockets are used in applications like…</p>
+<ul>
+<li>Discord, to allow real time communication between you and your friends</li>
+<li>Minecraft server consoles, to get live updates on your server.</li>
+</ul>
+<p><img width=50% src="/assets/to25/websockets.avif"></p>
+<h2 id="lets-build-it">Let's build it!</h2>
+<h3 id="step-1-pull-out-the-breadboard">Step 1: Pull out the breadboard</h3>
+<p>Go ahead and pull out your breadboard. This will be the base for your project.</p>
+<p><img width=25% src="/assets/to25/step1.avif"></p>
+<h3 id="step-2-put-on-esp-32">Step 2: Put on ESP-32</h3>
+<p>Insert the ESP-32 into the breadboard. The bottom of the ESP-32 (the side with the USB port), should be aligned with row 1, with one corner on column b and the other corner on column i. <strong>Do not force it. There is potential to break a pin.</strong></p>
+<p><img width=25% src="/assets/to25/step2.avif"></p>
+<h3 id="step-3-put-on-buttons">Step 3: Put on Buttons</h3>
+<p>Take the buttons one step at a time. The pins on the buttons are quite delicate, and while you should avoid breaking them if possible, do not be surprised if one or two are snapped.</p>
+<ol>
+<li>Insert your first button with the top left corner at b25, bottom left corner at b27, top right corner at e25, and bottom right corner at e27.</li>
+<li>Insert your second button with the top left corner at b28, bottom left corner at b30, top right corner at e30, and bottom right corner at e30.</li>
+<li>Insert your third button with the top left corner at f25, bottom left corner at f27, top right corner at i25, and bottom right corner at i27.</li>
+<li>Insert your fourth button with the top left corner at f28, bottom left corner at f30, top right corner at i30, and bottom right corner at i30.</li>
+</ol>
+<p><img width=25% src="/assets/to25/step3.avif"></p>
+<h3 id="step-4-attach-ground-wires">Step 4: Attach Ground Wires</h3>
+<p>We'll then move on to wiring up ground wires. Ground wires are used to ground our buttons, giving them a baseline reading of 
+zero to read off of.</p>
+<ol>
+<li>Wire from a19 to the left negative rail.</li>
+<li>Wire from a22 to the left negative rail.</li>
+<li>Wire from a25 to the left negative rail.</li>
+<li>Wire from a30 to the left negative rail.</li>
+</ol>
+<p><img width=25% src="/assets/to25/step4.avif"></p>
+<h3 id="step-5-attach-buzzer">Step 5: Attach Buzzer</h3>
+<p>We'll now go ahead and attach the buzzer. The buzzer has two pins and we'll place the buzzer on slots e22 and f22, 
+straddling the divide between the two sections of breadboard.</p>
+<p><img width=25% src="/assets/to25/step5.avif"></p>
+<h3 id="step-6-attach-ground-wires">Step 6: Attach Ground Wires</h3>
+<p>We have a few more ground wires for the other side.</p>
+<ol>
+<li>Wire from j6 to the right negative rail.</li>
+<li>Wire from j25 to the right negative rail.</li>
+<li>Wire from j30 to the right negative rail.</li>
+</ol>
+<p><img width=25% src="/assets/to25/step6.avif"></p>
+<h3 id="step-7-attach-data-wires">Step 7: Attach Data Wires</h3>
+<p>Now we move on to attaching data wires. The ESP-32 will use this to read the data from the buttons.</p>
+<ol>
+<li>Wire from a18 to a28.</li>
+<li>Wire from a17 to a27.</li>
+</ol>
+<p><img width=24% src="/assets/to25/step7a.avif">
+<img width=25% src="/assets/to25/step7b.avif"></p>
+<h3 id="step-8-attach-data-wires">Step 8: Attach Data Wires</h3>
+<p>Now we move on to attaching data wires. The ESP-32 will use this to read the data from the buttons.</p>
+<ol>
+<li>Wire from a13 to a28.</li>
+<li>Wire from a12 to a27.</li>
+</ol>
+<p><img width=25% src="/assets/to25/step8a.avif">
+<img width=25% src="/assets/to25/step8b.avif">
+<img width=18% src="/assets/to25/step8c.avif"></p>
+<h3 id="step-9-attach-power-wire">Step 9: Attach Power Wire</h3>
+<p>Now we can wire up power for our buzzer. The ESP-32 provides five volts of power on pin a11, that we will provide to our buzzer.</p>
+<ol>
+<li>Wire from a11 to a22.</li>
+</ol>
+<p><img width=25% src="/assets/to25/step9.avif">
+<img width=21% src="/assets/to25/step9a.avif"></p>
+<h3 id="step-10-play">Step 10: Play!</h3>
+<p>You can now plug in your ESP-32 to power and it will connect to Wi-Fi and then to the Rahoot server. If you rotate your breadboard so the USB port is facing to the left, you can use the buttons to play Rahoot.</p>
+<p><img width=50% src="/assets/to25/step10.avif"></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../techolympics24/" class="btn btn-neutral float-left" title="TechOlympics 2024"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../websiteworkshops/" class="btn btn-neutral float-right" title="Website Workshops">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../techolympics24/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../websiteworkshops/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
