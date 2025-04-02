@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Rust on ESP32s - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Rust on ESP32s";
+        var mkdocs_page_input_path = "projects/rust-on-esp32.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-03-17/">2024-03-17 - Ruby on Rails</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2025-02-17/">2025-02-17 - Let's learn MicroPython</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Rust on ESP32s</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#installation-instructions">Installation Instructions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-rust-for-esp32">Using Rust for ESP32</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics24/">TechOlympics 2024</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics25/">TechOlympics 2025</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">Rust on ESP32s</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="rust-on-esp32s">Rust on ESP32s</h1>
+<p>Why would you want to use <a href="https://www.rust-lang.org/">Rust</a>? TL;DR: The performance of C++, with better safety. Also, it's cool. 🦀 🦀 🦀</p>
+<p>An associated GitHub repo was created at <a href="https://github.com/Norse-IoT/rust-on-esp32">https://github.com/Norse-IoT/rust-on-esp32</a>.</p>
+<h2 id="installation-instructions">Installation Instructions</h2>
+<p>The following instructions were taken from <a href="https://github.com/esp-rs/rust-build#rust-build">https://github.com/esp-rs/rust-build#rust-build</a>.</p>
+<h2 id="using-rust-for-esp32">Using Rust for ESP32</h2>
+<p>Step 0: install Rust &amp; Cargo from RustUp
+- Go to <a href="https://rustup.rs/">https://rustup.rs/</a></p>
+<p>Step 1:  <a href="https://github.com/esp-rs/rust-build#espup-installation">Install espup</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>cargo<span class="w"> </span>install<span class="w"> </span>espup
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>espup<span class="w"> </span>install<span class="w"> </span><span class="c1"># To install Espressif Rust ecosystem</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># [Unix]: Source the following file in every terminal before building a project</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>.<span class="w"> </span><span class="nv">$HOME</span>/export-esp.sh
+</code></pre></div>
+Step 2: <a href="https://github.com/esp-rs/rust-build#risc-v-installation">RISC-V Installation</a></p>
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rustup<span class="w"> </span>target<span class="w"> </span>add<span class="w"> </span>riscv32imc-unknown-none-elf
+</code></pre></div>
+Step 3: <a href="https://github.com/esp-rs/rust-build#cargo-first-approach">The Cargo First Approach</a>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>cargo<span class="w"> </span>install<span class="w"> </span>cargo-generate
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># STD Project</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>cargo<span class="w"> </span>generate<span class="w"> </span>esp-rs/esp-idf-template<span class="w"> </span>cargo
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="c1"># NO-STD (Bare-metal) Project</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>cargo<span class="w"> </span>generate<span class="w"> </span>esp-rs/esp-template
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>cargo<span class="w"> </span>espflash<span class="w"> </span>flash<span class="w"> </span>&lt;SERIAL&gt;
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># for me, this was cargo espflash flash --port /dev/ttyUSB0</span>
+</code></pre></div></p>
+<h1 id="internal-blink-project">Internal Blink project</h1>
+<p>The standard sanity check after creating a new project is to create a project that blinks the internal led.</p>
+<p>In Rust, we can use:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="sd">//! Blinks the internal led (GPIO pin 2)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="sd">//! built for ESP32</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="sd">//! modified from https://github.com/esp-rs/esp-idf-hal/blob/master/examples/blinky.rs</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="sd">//! by Zack Sargent</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="k">use</span><span class="w"> </span><span class="n">esp_idf_hal</span><span class="p">::</span><span class="n">delay</span><span class="p">::</span><span class="n">FreeRtos</span><span class="p">;</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">use</span><span class="w"> </span><span class="n">esp_idf_hal</span><span class="p">::</span><span class="n">gpio</span><span class="p">::</span><span class="o">*</span><span class="p">;</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">use</span><span class="w"> </span><span class="n">esp_idf_hal</span><span class="p">::</span><span class="n">peripherals</span><span class="p">::</span><span class="n">Peripherals</span><span class="p">;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="k">fn</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">-&gt;</span><span class="w"> </span><span class="nc">anyhow</span><span class="p">::</span><span class="nb">Result</span><span class="o">&lt;</span><span class="p">()</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="cm">/* setup - runs once on board start */</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="c1">// It is necessary to call this function once. Otherwise some patches to the runtime</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="c1">// implemented by esp-idf-sys might not link properly. See https://github.com/esp-rs/esp-idf-template/issues/71</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="n">esp_idf_hal</span><span class="p">::</span><span class="n">sys</span><span class="p">::</span><span class="n">link_patches</span><span class="p">();</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="n">esp_idf_svc</span><span class="p">::</span><span class="n">log</span><span class="p">::</span><span class="n">EspLogger</span><span class="p">::</span><span class="n">initialize_default</span><span class="p">();</span><span class="w"> </span><span class="c1">// initalize logger</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a><span class="w">    </span><span class="c1">// The `?` at the end of the following lines means:</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="c1">// &quot;If this function returns an error, stop the main function and return that error.&quot;</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="c1">// It&#39;s like throwing an exception.</span>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="n">peripherals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Peripherals</span><span class="p">::</span><span class="n">take</span><span class="p">()</span><span class="o">?</span><span class="p">;</span><span class="w"> </span><span class="c1">// get list of peripherals</span>
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">    </span><span class="kd">let</span><span class="w"> </span><span class="k">mut</span><span class="w"> </span><span class="n">led</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">PinDriver</span><span class="p">::</span><span class="n">output</span><span class="p">(</span><span class="n">peripherals</span><span class="p">.</span><span class="n">pins</span><span class="p">.</span><span class="n">gpio2</span><span class="p">)</span><span class="o">?</span><span class="p">;</span><span class="w"> </span><span class="c1">// take the GPIO pin 2 as an output device</span>
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="n">log</span><span class="p">::</span><span class="n">info</span><span class="o">!</span><span class="p">(</span><span class="s">&quot;Connected! Blinking..&quot;</span><span class="p">);</span>
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">    </span><span class="cm">/* loop - equivalent to a `while(true)` loop in C++ */</span>
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">    </span><span class="k">loop</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">        </span><span class="n">led</span><span class="p">.</span><span class="n">set_high</span><span class="p">()</span><span class="o">?</span><span class="p">;</span>
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">        </span><span class="n">FreeRtos</span><span class="p">::</span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">        </span><span class="n">led</span><span class="p">.</span><span class="n">set_low</span><span class="p">()</span><span class="o">?</span><span class="p">;</span>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">        </span><span class="n">FreeRtos</span><span class="p">::</span><span class="n">delay_ms</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="p">}</span>
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="c1">// run with `cargo run` or `cargo espflash flash --port &lt;SERIAL&gt;`</span>
+</code></pre></div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../0-project-overview/" class="btn btn-neutral float-left" title="Projects Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../techolympics24/" class="btn btn-neutral float-right" title="TechOlympics 2024">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../0-project-overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../techolympics24/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

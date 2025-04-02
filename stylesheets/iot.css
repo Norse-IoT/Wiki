@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    --body-bg: #1e2129;
+    --code-bg: #272a35;
+    --link: #ffc107;
+    --link-hover: #ffca2c;
+    --text: white;
+    --menu-bg: #212529;
+    --menu-bg-active: #292d3a;
+    --menu-bg-hover: #2f3444;
+    --menu-bg-item: #242534;
+    --button: black;
+}
+
+body {
+    font-family: 'Ubuntu';
+}
+
+.rst-content code, .rst-content tt {
+    font-family: 'Fira Code';
+    background-color: var(--code-bg) !important;
+    border-color: transparent ;
+}
+
+.highlight, .rst-content pre code {
+    background-color: var(--code-bg) !important;
+
+}
+
+.iot {
+    display: flex !important;
+    flex-direction: column;
+    text-align: center;
+}
+
+.iot svg {
+    width: 40%;
+    padding-bottom: .5em;
+}
+.iot span {
+    text-transform: none !important;
+}
+
+section a:visited, section a, a:visited code, a code {
+   color: var(--link) !important;
+}
+section a:hover {
+    color: var(--link-hover) !important;
+}
+
+.wy-menu-vertical li.current>a, .wy-menu-vertical li.on a, .wy-menu-vertical li.toctree-l2.current>a {
+    background-color: var(--menu-bg-active);
+    color: var(--text);
+    border: #1f222b !important;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: var(--menu-bg-hover);
+
+}
+
+.wy-nav-shift, .wy-nav-side, .wy-side-nav-search, div .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    background-color: var(--menu-bg) !important;
+
+}
+
+.toctree-l2 {
+    background-color: var(--menu-bg-item) !important;
+    color: var(--text) !important;
+}
+.wy-menu-vertical li.current a:hover {
+    background-color: #33365a !important;
+}
+
+.wy-menu-vertical li.toctree-l2 a {
+    color: #b9b9b9;
+    border: #1f222b !important;
+
+}
+
+.wy-body-for-navmk, .wy-nav-content, body, .rst-versions {
+    background-color: var(--body-bg) !important;
+}
+
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    background-color: #393f4f !important;
+}
+
+.rst-content pre code, .wy-body-for-navmk, .wy-nav-content, body, label, .wy-side-nav-search, .rst-versions, th, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td, .wy-table-backed, .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td {
+    color: var(--text) !important;
+}
+
+
+
+.wy-nav-content {
+    max-width: unset !important;
+    height: 100vh;
+}
+
+nav, .rst-versions .rst-current-version {
+    background-color: var(--menu-bg) !important;
+    box-shadow: 0 0 .2rem #0000001a,0 .2rem .4rem #0003;
+}
+
+.rst-versions .rst-current-version {
+    text-transform: uppercase;
+}
+
+.wy-side-nav-search .wy-dropdown > a, .wy-side-nav-search > a {
+    text-transform:uppercase
+}
+.wy-side-nav-search input[type="text"] {
+    background-color: transparent !important;
+    border-color: var(--link) !important;
+    color: var(--text) !important;
+    filter: drop-shadow(0px 0px 50px rgb(65, 65, 65));
+}
+
+.digital-pin {
+    color: #00ff00;
+}
+.orange-pin {
+    color: #ffa600;
+}
+.power5-pin, .power3-pin {
+    color: red;
+}
+.ground-pin, .digital-pin, .power5-pin, .power3-pin {
+    font-weight: bold;
+}
+
+.hljs-title, .hljs-title.class_, .hljs-title.class_.inherited__, .hljs-title.function_{
+    color: #b48ff8;
+}
+
+.hljs-attr, .hljs-attribute, .hljs-literal, .hljs-meta, .hljs-number, .hljs-operator, .hljs-selector-attr, .hljs-selector-class, .hljs-selector-id, .hljs-variable {
+    color: #2c8fff
+}
+
+.hljs-built_in, .hljs-symbol {
+    color: #ff682c
+}
+
+.hljs-doctag, .hljs-keyword, .hljs-meta .hljs-keyword, .hljs-template-tag, .hljs-template-variable, .hljs-type, .hljs-variable.language_ {
+    color: #ff2c2c
+
+}
+
+.hljs-meta .hljs-string, .hljs-regexp, .hljs-string {
+    color: #5353ff !important
+}
+
+#social-block .item {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #727272 !important;
+}
+#social-block .item:hover, .social.item svg:hover {
+    color: var(--link) !important;
+    fill: var(--link) !important
+}
+
+#social-block .social {
+    font-size: 28px;
+
+}
+
+footer {
+    font-size: 16px;
+    margin-top: 3em;
+    padding-bottom: 3em;
+}
+
+.social.item svg {
+    width: 28px;
+    height: 28px;
+    fill: #727272;
+}
+#social-block {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.wy-side-scroll {
+    height: 96% !important;
+}
+
+
+/* EDIT ON GITHUB BUTTON */
+.rst-current-version span {
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: var(--link) !important;
+    border-radius: 500px;
+    color: var(--button);
+    margin-bottom: 10px;
+
+}
+
+.rst-current-version span a {
+    color: var(--button) !important;
+
+}

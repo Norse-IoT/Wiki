@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>2024-03-17 - Ruby on Rails - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "2024-03-17 - Ruby on Rails";
+        var mkdocs_page_input_path = "meetings/2024-03-17.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">2024-03-17 - Ruby on Rails</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#demo">Demo</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-project">Creating a project</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#lets-start-modelling">Let's start modelling!</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#creating-a-tickler">Creating a Tickler!</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#improving-our-tickler">Improving our Tickler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#creating-a-relationship">Creating a relationship</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#rats">Rats</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#ticklers">Ticklers</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#more-power-like-llms">More Power: Like LLMs?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ruby">Ruby</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../2025-02-17/">2025-02-17 - Let's learn MicroPython</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/techolympics24/">TechOlympics 2024</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/techolympics25/">TechOlympics 2025</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../projects/websiteworkshops/">Website Workshops</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Meetings</li>
+      <li class="breadcrumb-item active">2024-03-17 - Ruby on Rails</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="2024-03-17-ruby-on-rails">2024-03-17 - Ruby on Rails</h1>
+<p>Today, we're going to be briefly dipping our toes into Ruby on Rails.</p>
+<p>Ruby on Rails is a great way to build a website as a solo developer.</p>
+<p>Ruby on Rails was initially released in 2004, and is widely used across <a href="https://trends.builtwith.com/websitelist/Ruby-on-Rails/Historical">many big companies</a>.</p>
+<hr />
+<p>Today, we're going to demo of the power of Ruby on Rails.  Then, we'll start with the basics of Ruby.</p>
+<p>This is what we will be using today:</p>
+<ol>
+<li>This demo on Ruby on Rails</li>
+<li><a href="https://www.jdoodle.com/execute-ruby-online">https://www.jdoodle.com/execute-ruby-online</a></li>
+</ol>
+<hr />
+<h2 id="demo">Demo</h2>
+<p>You don't need to follow along with this. This is to serve as a motivation as to <em>why</em> to learn Ruby/Ruby on Rails.</p>
+<h3 id="installation">Installation</h3>
+<p>You can install Ruby on Rails here: <a href="https://guides.rubyonrails.org/install_ruby_on_rails.html">https://guides.rubyonrails.org/install_ruby_on_rails.html</a></p>
+<h3 id="creating-a-project">Creating a project</h3>
+<p>Let's create a new project!</p>
+<p>This project is going to be themed around Sam's Rat Tickling certification.</p>
+<p>We can run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>rails<span class="w"> </span>new<span class="w"> </span>ratcert
+</code></pre></div>
+<p>To create a new project called "ratcert".</p>
+<p>This follows the "Convention over Configuration" part of <a href="https://rubyonrails.org/doctrine">Rail's doctrine</a>. They know what you'll need, so they add it for you.</p>
+<p>In this basic project, you get your Model, View, and Controller (MVC), as well as your mailers (for email), jobs (for background jobs), and <a href="https://hotwired.dev/">Hotwire</a>.</p>
+<p>So, now we have a basic project, ready to go!</p>
+<h3 id="lets-start-modelling">Let's start modelling!</h3>
+<p>Our project is going to represent a few basic parts of a website built to manager rat tickling certifications.</p>
+<p>Let's create the ability to keep track of rats.</p>
+<p>One of the superpowers of Ruby on Rails is its <a href="https://www.rubyguides.com/2020/03/rails-scaffolding/">code "scaffolds"</a>.</p>
+<p>We can run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>rails generate scaffold rat name:string birthday:date
+</code></pre></div>
+<p>To generate a rat that has a string name, and a birthday date.</p>
+<p>You can see all the files this created in the output of the command.</p>
+<p>Now, we can run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>rails<span class="w"> </span>db:migrate<span class="w"> </span><span class="c1"># create the rat structure in the database</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>rails<span class="w"> </span>server<span class="w"> </span><span class="c1"># start the server</span>
+</code></pre></div>
+<p>You should be greeted with something like this:</p>
+<p><img src="https://github.com/user-attachments/assets/4a07306a-0376-4707-858a-6ca7f6bfb6c8" alt="an image of a rails starter page" style="width: 50%" /></p>
+<p>We can navigate to <code>/rats</code> to see a list of our rats.</p>
+<p><img alt="listing of rats, offering to create a new rat" src="https://github.com/user-attachments/assets/cd6c0e1f-e70b-4cad-89c8-df9417740360" /></p>
+<p>We can click "new rat" to create a rat.</p>
+<p>I'll demo some more features of the webui here.</p>
+<p>But, let's take a second to see where this comes from.</p>
+<p>The scaffold has created some views, which we can interact with:</p>
+<p><img alt="list of files in vscode" src="https://github.com/user-attachments/assets/9a4db638-5273-4947-9c27-9f798a9bf8ed" /></p>
+<p>The scaffold has also created a database migration:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">CreateRats</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Migration</span><span class="o">[</span><span class="mi">8</span><span class="o">.</span><span class="mi">0</span><span class="o">]</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="k">def</span><span class="w"> </span><span class="nf">change</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="n">create_table</span><span class="w"> </span><span class="ss">:rats</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="o">|</span><span class="n">t</span><span class="o">|</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">      </span><span class="n">t</span><span class="o">.</span><span class="n">string</span><span class="w"> </span><span class="ss">:name</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="n">t</span><span class="o">.</span><span class="n">date</span><span class="w"> </span><span class="ss">:birthday</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="n">t</span><span class="o">.</span><span class="n">timestamps</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="k">end</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="k">end</span>
+</code></pre></div>
+<p>This is another power of ruby: to abstract away the database you're using. </p>
+<p>Read more about this here: <a href="https://guides.rubyonrails.org/active_record_migrations.html#migration-overview">https://guides.rubyonrails.org/active_record_migrations.html#migration-overview</a></p>
+<p>Note that this is bi-directional, so that this can both create and destroy these fields in our database.</p>
+<p>We also created a Rat, which just inherits everything from the database:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># this is our &quot;model&quot;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Rat</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">ApplicationRecord</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">end</span>
+</code></pre></div>
+<p>It's also created a controller in <code>./app/controllers/rats_controller.rb</code> that we should look through and explain.</p>
+<h2 id="creating-a-tickler">Creating a Tickler!</h2>
+<p>So, rats can be tickled by one person, and each person may tickle many rats.</p>
+<p>We can create a Tickler like this:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">rails</span><span class="w"> </span><span class="n">generate</span><span class="w"> </span><span class="n">scaffold</span><span class="w"> </span><span class="n">tickler</span><span class="w"> </span><span class="nb">name</span><span class="ss">:string</span><span class="w"> </span><span class="ss">email</span><span class="p">:</span><span class="n">uniq</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">rails</span><span class="w"> </span><span class="ss">db</span><span class="p">:</span><span class="n">migrate</span>
+</code></pre></div>
+<p>This means each tickler has a name, which it uses as its index (<a href="https://medium.com/@mera.stackhouse/what-are-indexes-and-how-to-add-them-to-your-rails-app-dc066d538771">read more here</a>), and an email which must be unique.</p>
+<p>For more info on associations, read this: <a href="https://guides.rubyonrails.org/association_basics.html">https://guides.rubyonrails.org/association_basics.html</a></p>
+<h4 id="improving-our-tickler">Improving our Tickler</h4>
+<p>At this point, we can just put anything into our form.</p>
+<p>That's not great, let's add some validations!</p>
+<p>We can add these lines to the model, to ensure any new data is valid:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Tickler</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">ApplicationRecord</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="c1"># validates that the name is present</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="n">validates_presence_of</span><span class="w"> </span><span class="ss">:name</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="c1"># validate that the email exists, and is in the right format</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="n">validates_uniqueness_of</span><span class="w"> </span><span class="ss">:email</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="n">validates</span><span class="w"> </span><span class="ss">:email</span><span class="p">,</span><span class="w"> </span><span class="nb">format</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="ss">with</span><span class="p">:</span><span class="w"> </span><span class="no">URI</span><span class="o">::</span><span class="no">MailTo</span><span class="o">::</span><span class="no">EMAIL_REGEXP</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="k">end</span>
+</code></pre></div>
+<p>(Here's the bit where Zack demonstrates this at <code>http://127.0.0.1:3000/ticklers</code>)</p>
+<h4 id="creating-a-relationship">Creating a relationship</h4>
+<p>So, let's define a relationship between our rats and rat ticklers.</p>
+<p>The documentation at <a href="https://guides.rubyonrails.org/association_basics.html#types-of-associations">https://guides.rubyonrails.org/association_basics.html#types-of-associations</a> is great, so read that first.</p>
+<p>Then, let's create a one-to-many relationship:</p>
+<p>(I think IRL this should be a <a href="https://guides.rubyonrails.org/association_basics.html#has-and-belongs-to-many">many-to-many relationship</a>, but that's a little complex for right now.)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Rat</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">ApplicationRecord</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="n">belongs_to</span><span class="w"> </span><span class="ss">:tickler</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">end</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="k">class</span><span class="w"> </span><span class="nc">Tickler</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="no">ApplicationRecord</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="w">  </span><span class="c1"># validates that the name is present</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="n">validates_presence_of</span><span class="w"> </span><span class="ss">:name</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="c1"># validate that the email exists, and is in the right format</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="n">validates_uniqueness_of</span><span class="w"> </span><span class="ss">:email</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="n">validates</span><span class="w"> </span><span class="ss">:email</span><span class="p">,</span><span class="w"> </span><span class="nb">format</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="ss">with</span><span class="p">:</span><span class="w"> </span><span class="no">URI</span><span class="o">::</span><span class="no">MailTo</span><span class="o">::</span><span class="no">EMAIL_REGEXP</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span><span class="n">has_many</span><span class="w"> </span><span class="ss">:rats</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="k">end</span>
+</code></pre></div>
+<p>Now let's update the views to show this relationship:</p>
+<h5 id="rats">Rats</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># app/views/rats/_form.html.erb</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span><span class="o">&lt;</span><span class="sx">%= form.label :tickler_id, style: &quot;display: block&quot; %&gt;</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="sx">  &lt;%=</span><span class="w"> </span><span class="n">form</span><span class="o">.</span><span class="n">collection_select</span><span class="w"> </span><span class="ss">:tickler_id</span><span class="p">,</span><span class="w"> </span><span class="no">Tickler</span><span class="o">.</span><span class="n">all</span><span class="p">,</span><span class="w"> </span><span class="ss">:id</span><span class="p">,</span><span class="w"> </span><span class="ss">:name</span><span class="p">,</span><span class="w"> </span><span class="ss">prompt</span><span class="p">:</span><span class="w"> </span><span class="kp">true</span><span class="w"> </span><span class="sx">%&gt;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="sx">&lt;/div&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># app/views/rats/show.html.erb</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="o">&lt;</span><span class="n">div</span><span class="o">&gt;</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="o">&lt;</span><span class="n">strong</span><span class="o">&gt;</span><span class="ss">Tickler</span><span class="p">:</span><span class="o">&lt;</span><span class="sr">/strong&gt;</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="sr">  &lt;%= @rat.tickler&amp;.name %&gt;</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="sr">&lt;/</span><span class="n">div</span><span class="o">&gt;</span>
+</code></pre></div>
+<h5 id="ticklers">Ticklers</h5>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a># app/views/ticklers/show.html.erb
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>&lt;h2&gt;Rats&lt;/h2&gt;
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>&lt;ul&gt;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  &lt;% @tickler.rats.each do |rat| %&gt;
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    &lt;li&gt;&lt;%= link_to &quot;Rat ##{rat.id}&quot;, rat %&gt;&lt;/li&gt;
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  &lt;% end %&gt;
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>&lt;/ul&gt;
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>&lt;%= link_to &#39;New Rat&#39;, new_rat_path(tickler_id: @tickler.id) %&gt;
+</code></pre></div>
+<p>Also, we need to create a field on our Rat that associates it with a Tickler. We can do so here:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>rails<span class="w"> </span>generate<span class="w"> </span>migration<span class="w"> </span>AddTicklerIdToRats<span class="w"> </span>tickler_id:integer
+</code></pre></div>
+<p>And we need to update the controller's expected parameters:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># app/controllers/rats_controller.rb</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">  </span><span class="kp">private</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="c1"># Use callbacks to share common setup or constraints between actions.</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">set_rat</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">      </span><span class="vi">@rat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">Rat</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">params</span><span class="o">.</span><span class="n">expect</span><span class="p">(</span><span class="ss">:id</span><span class="p">))</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="k">end</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="c1"># Only allow a list of trusted parameters through.</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="k">def</span><span class="w"> </span><span class="nf">rat_params</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">      </span><span class="n">params</span><span class="o">.</span><span class="n">expect</span><span class="p">(</span><span class="ss">rat</span><span class="p">:</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="ss">:name</span><span class="p">,</span><span class="w"> </span><span class="ss">:birthday</span><span class="p">,</span><span class="w"> </span><span class="ss">:tickler_id</span><span class="w"> </span><span class="o">]</span><span class="p">)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">    </span><span class="k">end</span>
+</code></pre></div>
+<h2 id="more-power-like-llms">More Power: Like LLMs?</h2>
+<p>I found this recently, and thought it highlighted the beauty of both Ruby and Rails:</p>
+<p><a href="https://github.com/crmne/ruby_llm?tab=readme-ov-file#rails-integration-that-makes-sense">https://github.com/crmne/ruby_llm?tab=readme-ov-file#rails-integration-that-makes-sense</a></p>
+<p>I thought the tool feature was very nice.</p>
+<h2 id="ruby">Ruby</h2>
+<p>Okay, now let's review the features of Ruby that made all of that so powerful.</p>
+<p>Let's check out:</p>
+<ol>
+<li><a href="https://learnxinyminutes.com/ruby/">https://learnxinyminutes.com/ruby/</a></li>
+<li><a href="https://blog.appsignal.com/2021/08/24/responsible-monkeypatching-in-ruby.html">https://blog.appsignal.com/2021/08/24/responsible-monkeypatching-in-ruby.html</a></li>
+<li><a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby#basic-ruby">https://www.theodinproject.com/paths/full-stack-ruby-on-rails/courses/ruby#basic-ruby</a></li>
+<li><a href="https://medium.com/@camfeg/dynamic-method-definition-with-rubys-define-method-b3ffbbee8197">https://medium.com/@camfeg/dynamic-method-definition-with-rubys-define-method-b3ffbbee8197</a></li>
+</ol>
+<hr />
+<p>Further reading:</p>
+<ol>
+<li><a href="https://learnxinyminutes.com/ruby/">https://learnxinyminutes.com/ruby/</a></li>
+<li><a href="https://d2biiyjlsh52uh.cloudfront.net/rails/rails-8-demo.mp4">The creator of Ruby on Rails giving a demo of its features</a></li>
+<li><a href="https://www.theodinproject.com/paths/full-stack-ruby-on-rails">https://www.theodinproject.com/paths/full-stack-ruby-on-rails</a></li>
+<li><a href="https://guides.rubyonrails.org/getting_started.html">https://guides.rubyonrails.org/getting_started.html</a></li>
+<li><a href="https://www.destroyallsoftware.com/talks/boundaries">https://www.destroyallsoftware.com/talks/boundaries</a></li>
+<li><a href="https://github.com/fpsvogel/learn-ruby">https://github.com/fpsvogel/learn-ruby</a></li>
+<li><a href="https://poignant.guide/book/chapter-3.html">https://poignant.guide/book/chapter-3.html</a></li>
+<li>...the past 20 years of blog posts from various developers...</li>
+</ol>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../getting-started/wiki/" class="btn btn-neutral float-left" title="Getting Started - Wiki Editing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../2024-11-26/" class="btn btn-neutral float-right" title="2024-11-26 - React Data Visualization">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../getting-started/wiki/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../2024-11-26/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

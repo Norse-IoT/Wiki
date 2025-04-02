@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Website Workshops - Norse IoT Club - Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../stylesheets/iot.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Website Workshops";
+        var mkdocs_page_input_path = "projects/websiteworkshops.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Norse IoT Club - Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../calendar/">Calendar</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../hardware/">Hardware</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../inventory/">Inventory</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../meeting-checklist/">Meeting Checklist</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../pinout/">Technical Info (ESP-32)</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Getting started</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/">Getting Started</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/basic-button/">Getting Started - Basic Button Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-project/">Getting Started - LED via Serial</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../getting-started/wiki/">Getting Started - Wiki Editing</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Meetings</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-03-17/">2024-03-17 - Ruby on Rails</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2024-11-26/">2024-11-26 - React Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../meetings/2025-02-17/">2025-02-17 - Let's learn MicroPython</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">All Projects</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../0-project-overview/">Projects Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../rust-on-esp32/">Rust on ESP32s</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics24/">TechOlympics 2024</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../techolympics25/">TechOlympics 2025</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Website Workshops</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#basics">Basics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#connecting-to-the-drive">Connecting to the Drive</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#windows-10">Windows 10</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#windows-11">Windows 11</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mac">Mac</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#linux-debianpoposubuntu">Linux (Debian/PopOS/Ubuntu)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#chromeos">ChromeOS</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#final-notes">Final Notes</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#editing-guide">Editing Guide</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#editing-the-template">Editing the Template</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#open-the-file-in-visual-studio-code-or-notepad">Open the file in Visual Studio Code (or Notepad)</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#uploading-to-the-drive">Uploading to the Drive</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-notes">Additional Notes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#github-pages-guide">GitHub Pages Guide</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#using-word-or-google-docs">Using Word or Google Docs</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/3d-printer/">3d Printer</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/advanced-wiki-editing/">Editing the Wiki - For Advanced Users</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/arduino-ide-alternative/">An Arduino IDE Alternative - PlatformIO</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/mac-mini-script/">Mac Mini Script</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../resources/maintaining/">Maintaining Club Software</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Norse IoT Club - Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Projects</li>
+      <li class="breadcrumb-item active">Website Workshops</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="website-workshops">Website Workshops</h1>
+<h2 id="basics">Basics</h2>
+<p>NKU offers free static website hosting for students and faculty. These instructions will show you how to connect to the drive and make a basic resume page.</p>
+<h2 id="connecting-to-the-drive">Connecting to the Drive</h2>
+<h3 id="windows-10">Windows 10</h3>
+<ul>
+<li>Be sure you’re connected to NORSE-NET before connecting to the drive.</li>
+<li>Open File Explorer. Click on "This PC". At the top menu select "Map Network Drive."</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image12.png" /></p>
+<ul>
+<li>
+<p>In the Folder field, enter the server name: \studenthome.nku.edu\username</p>
+</li>
+<li>
+<p>Your username is your NKU username, i.e.  \studenthome.nku.edu\godstedc1</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image6.png" /></p>
+<ul>
+<li>Click Finish.</li>
+<li>
+<p>Sign in with your NKU credentials.</p>
+</li>
+<li>
+<p>Make sure to put nku\ before your username, i.e. nku\godstedc1
+    OR If you have an NKU provided computer, just use your NKU username.</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image8.png" /></p>
+<ul>
+<li>The drive will show up in a new window.</li>
+</ul>
+<h3 id="windows-11">Windows 11</h3>
+<ul>
+<li>Be sure you’re connected to NORSE-NET before connecting to the drive.</li>
+<li>Open File Explorer. Click on "This PC". At the top menu select "Map Network Drive."</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image14.png" /></p>
+<ul>
+<li>
+<p>In the Folder field, enter the server name: \studenthome.nku.edu\username</p>
+</li>
+<li>
+<p>Your username is your NKU username, i.e.  \studenthome.nku.edu\godstedc1</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image6.png" /></p>
+<ul>
+<li>
+<p>Sign in with your NKU credentials.</p>
+</li>
+<li>
+<p>Make sure to put nku\ before your username, i.e. nku\godstedc1 OR If you have an NKU provided computer, just use your NKU username.</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image8.png" /></p>
+<ul>
+<li>The drive will show up in a new window.</li>
+</ul>
+<h3 id="mac">Mac</h3>
+<ul>
+<li>Be sure you’re connected to NORSE-NET before connecting to the drive.</li>
+<li>From the Finder app, choose Go from the top navigation menu, and choose connect to server.</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image11.png" />
+<img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image1.png" /></p>
+<ul>
+<li>
+<p>In the folder field, type smb://studenthome.nku.edu/username</p>
+</li>
+<li>
+<p>Your username is your NKU username, i.e. godstedc1</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image9.png" /></p>
+<ul>
+<li>Sign in with your NKU credentials.</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image3.png" /></p>
+<ul>
+<li>
+<p>Make sure to put nku\ before your username, i.e. nku\godstedc1 OR If you have an NKU provided computer, just use your NKU username.</p>
+</li>
+<li>
+<p>It will open Finder. In the left menu under Locations will be studenthome.nku.edu.</p>
+</li>
+</ul>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image2.png" /></p>
+<h3 id="linux-debianpoposubuntu">Linux (Debian/PopOS/Ubuntu)</h3>
+<ul>
+<li>Be sure you’re connected to NORSE-NET before connecting to the drive.</li>
+<li>Open Files, and choose Other Locations</li>
+<li>Under Connect To Server, enter the server name: smb\studenthome.nku.edu\username</li>
+<li>Your username is your NKU username, i.e. smb\studenthome.nku.edu\godstedc1</li>
+<li>Change “Connect As” to Registered User.</li>
+<li>Sign in with your NKU credentials.</li>
+<li>Make sure to put nku\ before your username, i.e. nku\godstedc1</li>
+<li>The drive will open in the current window.</li>
+</ul>
+<h3 id="chromeos">ChromeOS</h3>
+<ul>
+<li>Be sure you’re connected to NORSE_NET before connecting to the drive.</li>
+<li>Open Settings &gt; Files &gt; Network file shares &gt; Add file share.</li>
+<li>Under File Share URL, enter the server name: smb://studenthome.nku.edu\username</li>
+<li>Your username is your NKU username, i.e. smb://studenthome.nku.edu\godstedc1</li>
+<li>Sign in with your NKU credentials.</li>
+<li>Make sure to put nku\ before your username, i.e. nku\godstedc1</li>
+<li>Open the Files App. The network drive should appear in the left sidebar.</li>
+</ul>
+<h3 id="final-notes">Final Notes</h3>
+<ul>
+<li>Once you are connected to the network drive, it can be accessed just like any other drive connected to your computer. Files can be copied and pasted like you would to a flash drive.</li>
+</ul>
+<h2 id="editing-guide">Editing Guide</h2>
+<p>Anything you add to the page will be accessible on the global internet through https://studenthome.nku.edu/~username/</p>
+<h3 id="editing-the-template">Editing the Template</h3>
+<p>For this guide, we will create a basic resume page based off of a template.</p>
+<p>Visit the Workshop Template page and choose a design.</p>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image10.png" /></p>
+<p>Each template has three colour options, so choose the colour/design you prefer.</p>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image5.png" /></p>
+<p>Once you have one you like, click the download button at the top.</p>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image13.png" /></p>
+<p>If you don’t like any of the templates, you can use Google Docs or Microsoft Word to design your own. Do note that as these are not designed to be web page editors, it might not look good on all platforms. Instructions are available below.</p>
+<p>To edit the file, we recommend using Visual Studio Code. It is available for all platforms, including ChromeOS through a web app. You can use Notepad, but the interface will be less user friendly.</p>
+<h4 id="open-the-file-in-visual-studio-code-or-notepad">Open the file in Visual Studio Code (or Notepad)</h4>
+<p>https://norseiot.club/Website-Workshops/Instructions/images/image4.png</p>
+<p>The first half of the template contains the design - or CSS code. The second half contains the content and structure of the document - or HTML code. Scroll down past the CSS to the <code>&lt;main&gt;</code> tag. (You can use CTRL-F)</p>
+<p>From here, you can change the document to reflect your own name, work experience, and education.</p>
+<p>If you want to add additional work experiences, or education, just copy everything from First Job Begin to First Job End, and paste it immediately following First Job End, before the <code>&lt;/section&gt;</code> tag.</p>
+<p><img alt="" src="https://norseiot.club/Website-Workshops/Instructions/images/image7.png" /></p>
+<p>You can preview your changes by opening your index.html file in your browser. Once both are open, you can save the file in Visual Studio Code (or Notepad), and then refresh your browser to see the changes.</p>
+<h2 id="uploading-to-the-drive">Uploading to the Drive</h2>
+<p>Once you are finished editing the file, go back to your network drive, and open the WWW folder.</p>
+<p>Anything in this folder will be accessible on the internet, and anything named index will be shown when you go to the root directory - meaning when you just connect to https://studenthome.nku.edu/~username/.</p>
+<p>Start by removing the index.php file in the directory. We’ll be replacing it with the index.html file that we created.</p>
+<p>Copy the index.html file that you edited from your Downloads folder to the WWW folder on your network drive. Congrats, you’re done!</p>
+<h2 id="additional-notes">Additional Notes</h2>
+<h3 id="github-pages-guide">GitHub Pages Guide</h3>
+<p>If you are unable to connect to your network drive, or want to ensure you can keep your site even after you graduate, you can use GitHub Pages in order to host your site on their servers.</p>
+<ul>
+<li>First, sign up on GitHub.</li>
+<li>Then, create a new repository (a place to store your website’s code)</li>
+<li>For repository name, enter yourgithubusername.github.io</li>
+<li>
+<p>For me, that would be congodsted.github.io</p>
+</li>
+<li>
+<p>Leave all the settings as default, and choose Create Repository.</p>
+</li>
+<li>You can either use the GitHub Desktop app to synchronise your changes, or just upload your files directly. For now, we’ll just upload our site there.</li>
+<li>From your repository, click Add Files, and choose Upload Files.</li>
+<li>Either drag and drop your files into the provided box, or click to find them on your machine like you would on Canvas or Google Drive.</li>
+<li>If you want, you can add a description of your changes in the first textbox.</li>
+<li>Click commit changes.</li>
+<li>You’re done! Head to yourgithubusername.github.io and see your site.</li>
+</ul>
+<h2 id="using-word-or-google-docs">Using Word or Google Docs</h2>
+<p>If you don’t like any of the provided templates, you’re welcome to either write your own from scratch or design one in Word or Google Docs. Both let you export an HTML file that you can use. This file might not look as good though, as neither are designed for web design.</p>
+<p>Save the file as index.html, and return to Uploading to the Drive.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../techolympics25/" class="btn btn-neutral float-left" title="TechOlympics 2025"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../resources/3d-printer/" class="btn btn-neutral float-right" title="3d Printer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../techolympics25/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../resources/3d-printer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../javascripts/removeWatermark.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
