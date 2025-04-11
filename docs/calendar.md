@@ -22,10 +22,10 @@ Undated Topics:
 | 2024-03-17 | Zack Sargent  | Ruby on Rails <br> *E-Board Candidates Open* |
 | 2024-03-24 | Aaron Milner  | *E-Board Candidates Open* <br> Board Game Day!! |
 | 2024-03-31 | Aaron Milner  | *E-Board Election (Nominations Open)*  |
-| 2024-04-07 |               |                                        |
-| 2024-04-14 |               |                                        |
-| 2024-04-21 |               |                                        |
-| 2024-04-28 |               |                                        |
+| 2024-04-07 | Eddie Horowitz  |                                        |
+| 2024-04-14 | Aaron Milner  | AR/VR                                  |
+| 2024-04-21 | Eurydice Lunnemann | Micropython &amp; Microcontrollers |
+| 2024-04-28 | E-Board       | Party                                  |
 
 
 ## Fall 2024
